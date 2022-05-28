@@ -1,0 +1,20 @@
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+<style>
+
+
+</style>
+<div style="text-align:center;">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <p>Delete?</p>
+            <a href="{{ request.META.HTTP_REFERER }}" type="button" class="btn btn-primary">No</a>
+            <input type="submit" class="btn btn-primary" value="Yes"></input>
+        </form>
+    
+    </div>
+
+</div>
+{% endblock %}

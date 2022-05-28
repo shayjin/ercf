@@ -1,0 +1,75 @@
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+
+<style>
+    .search-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    } 
+
+    .posts-header {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin-bottom: 15px;
+        grid-gap: 5vw;
+    }
+
+    .topics a {
+        margin-left: 10px;
+    }
+    
+</style>
+<div class="search-container" style="margin-top: -100px;">
+    <div>
+    </div>
+
+    <div style="padding: 30px;">
+        <div class="posts-header">
+            <h4>  {{posts_count}} Posts Total</h5>
+            <a href="{% url "ercf:form" %}" type="button" class="btn btn-primary">Create a Post</a>
+            <form method="GET" action="{% url "ercf:index" %}" style="float:left;">
+                <input type="text" name="q" placeholder="Search"/> 
+            </form>
+        </div>
+ 
+        <table class="table table-striped" style="text-align: center;">
+            <tr>
+                <th>#</th>
+                <th>TItle</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+            {% for post in posts %}
+                <tr> 
+                    <td>{{ post.id }}</td>
+                    <td><a href="{% url "ercf:post" post.id %}">{{ post.title }}</a></td>
+                    <td>@{{ post.author }}</td>
+                    <td>{{ post.date_posted|date:'m-d-20y'  }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+    <div class="topics" style="margin-top: 25px;">
+        <h3>Topics</h3>
+        <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
+    
+
+        <div>
+            <a href="{% url "ercf:posts" %}">All</a>
+        </div>
+
+        {% for topic in topics %}
+            <div>
+                <a href="{% url "ercf:posts" %}?q={{topic.name}}">{{topic.name}}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock %}

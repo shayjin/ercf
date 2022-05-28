@@ -1,0 +1,115 @@
+
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.main-video iframe, .main-video button{
+    margin: 0 auto;
+    display: block;
+    border-style:none;
+} 
+.video-selections img, .video-selections button{
+    width: 26.666vw;
+    height: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top:20px
+}
+
+.video-selections {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.video-selections div {
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+.header {
+    margin-bottom: 30px;
+    margin-top: -80px;
+    text-align:center;
+}
+
+.button {
+    border:1px solid;
+    margin: 0 auto;
+    display: block;
+    margin-top:20px;
+}
+
+
+</style>
+
+
+<div class="header">
+    <a href="{% url 'ercf:create_video' %}" type="button" class="btn btn-primary">Create a Post</a>
+</div>
+
+<div class="main-video">
+    <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/{{ first_video_id }}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<button class="button">Download</button>
+<div class="topics" style="margin-top: 25px;">
+    <h3>Topics</h3>
+    <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
+
+
+    <div>
+        <a href="{% url "ercf:posts" %}">All</a>
+    </div>
+
+    {% for topic in topics %}
+        <div>
+            <a href="{% url "ercf:posts" %}?q={{topic.name}}">{{topic.name}}</a>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="video-selections">
+    {% for video in videos %}
+        <div>
+            <img src="https://i.ytimg.com/vi/{{ video.video_id }}/hqdefault.jpg" onclick="displayVideo('{{ video.video_id }}')">
+            <br/>
+            {{ video.title }}
+        </div>
+    {% endfor %}
+    
+</div>
+
+
+<script>
+var selectedVideo = document.getElementById('main-video').src;
+
+document.getElementById('main-video').src = videos[0].url;
+
+function displayVideo(id) {
+    var ytString = "https://www.youtube.com/embed/" + id;
+    document.getElementById('main-video').src = ytString;
+    selectedVideo = ytString;
+}
+
+$(".button").click(function() {
+    var format = "mp3";
+    var src = "" + selectedVideo+ "=" + format + "";
+    download(selectedVideo, format);
+});
+
+function download (link, format){
+    $(".button").html('<iframe src="https://loader.to/api/button/?url=' + link + '&f=' + format + '")></iframe>');
+}
+
+
+
+</script>
+
+{% endblock %}

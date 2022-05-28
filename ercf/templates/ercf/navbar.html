@@ -1,0 +1,77 @@
+{% load static %}
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        margin-left: 10vw;
+    }
+
+    .top a {
+        float: left;
+    }
+
+    .navbar a {
+        font-size: 1.5vw;
+        margin-left:3vw;
+        margin-right:5vw;
+    }
+
+    @media screen and (max-width: 900px) {
+        .navbar a {
+            font-size: 10px;
+            margin-left:0px;
+            margin-right:-50px;
+        }
+        .logo {
+        }
+        .navbar {
+            margin-right: 12px;
+        }
+      }
+      
+    
+    .top {
+        margin-top:30px;
+        display:grid;
+        grid-gap: 5vw;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+
+</style>
+<div class="top">
+    <div>
+        <a class="logo" href="{% url "ercf:index" %}">
+            <h1>DAMWIM</h1>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <a href="{% url "ercf:beats" %}"><h6>Beats</h6></a>
+        <a href="{% url "ercf:samples" %}"><h6>Samples</h6></a>
+        <a href="{% url "ercf:posts" %}"><h6>Forum</h6></a>
+            
+    </div>
+    <div class="dropdown" style="margin-top:5px; margin-left: 30px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img style="width: 1.3vw; height: 1.3vw;" src="{% static "images/user.png" %}">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            {% if request.user.is_authenticated %}
+                <li><a class="dropdown-item" href="{% url "ercf:profile" request.user.id %}">View Profile</a></li>
+                <li><a class="dropdown-item" href="{% url "ercf:logout" %}">Log Out</a></li>
+            {% else %}
+                <li><a class="dropdown-item" href="{% url "ercf:login" %}">Log In</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    
+</div>
+
+
+
+<br><br><br/><br/><br/>
+
+
