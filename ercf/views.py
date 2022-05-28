@@ -187,6 +187,12 @@ def beats(request):
     videos = Video.objects.all().order_by("-id")
     first = True
     first_video_id = ""
+    q = request.GET.get("q") if request.GET.get("q") != None else ""
+    topics = Topic.objects.all()
+    videos = Video.objects.filter(
+        Q(topic__name__icontains=q)
+    ).order_by("-id")
+
     for video in videos:
         video.video_id = video.url[video.url.index("?v=")+3::]
         html_text = requests.get(video.url).text
@@ -196,7 +202,7 @@ def beats(request):
         if first:
             first_video_id = video.video_id
             first = False
-    context = {"videos": videos, "first_video_id": first_video_id}
+    context = {"videos": videos, "first_video_id": first_video_id, "topics": topics}
         
     return render(request, "ercf/beats.html", context)
 

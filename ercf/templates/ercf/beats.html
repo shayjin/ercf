@@ -9,6 +9,8 @@
     display: block;
     border-style:none;
 } 
+
+
 .video-selections img, .video-selections button{
     width: 26.666vw;
     height: 15vw;
@@ -46,6 +48,10 @@
     margin-top:20px;
 }
 
+.topic a{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 </style>
 
@@ -57,23 +63,24 @@
 <div class="main-video">
     <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/{{ first_video_id }}" frameborder="0" allowfullscreen></iframe>
 </div>
-
+<br/>
 <button class="button">Download</button>
+
 <div class="topics" style="margin-top: 25px;">
-    <h3>Topics</h3>
-    <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
+    <center>
+        <h3>Genres</h3>
+        <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
+        <a href="{% url "ercf:beats" %}">All</a>
+        {% for topic in topics %}
+            <div class="topic">
+                <a href="{% url "ercf:beats" %}?q={{topic.name}}">{{topic.name}}</a>
+            </div>
+        {% endfor %}
+    </center>
 
-
-    <div>
-        <a href="{% url "ercf:posts" %}">All</a>
-    </div>
-
-    {% for topic in topics %}
-        <div>
-            <a href="{% url "ercf:posts" %}?q={{topic.name}}">{{topic.name}}</a>
-        </div>
-    {% endfor %}
 </div>
+
+
 
 <div class="video-selections">
     {% for video in videos %}
@@ -83,6 +90,8 @@
             {{ video.title }}
         </div>
     {% endfor %}
+
+    
     
 </div>
 
