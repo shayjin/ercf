@@ -4,7 +4,43 @@
 {% block body %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
+.container {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header {
+    margin-bottom: 30px;
+    margin-top: -80px;
+    text-align:center;
+}
+
 </style>
+
+<div class="header">
+    <a href="{% url 'ercf:create_sample' %}" type="button" class="btn btn-primary">Create a Post</a>
+</div>
+
+<div class="container">
+    <div>
+        <img src="{% static 'images/cd.jpeg' %}">
+    </div>
+    <div>
+        <h3>hi</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis augue vitae leo egestas consectetur. Ut tincidunt, neque vitae finibus tincidunt, eros nisi bibendum ligula, vel malesuada lacus libero eu massa. Nulla in mi varius justo sollicitudin finibus et id erat. In leo libero, facilisis porttitor libero in, faucibus aliquam enim. Curabitur et justo nisl. Etiam sollicitudin felis in turpis eleifend, eu commodo purus condimentum. Proin consectetur, tortor a molestie gravida, magna ipsum semper magna, ac imperdiet orci eros id massa. Donec vestibulum elit magna, nec rhoncus libero tempor sed. Aliquam laoreet et metus et aliquet. Vestibulum rutrum blandit purus vitae aliquam. Nullam a porttitor nibh.
+
+In sit amet maximus magna. Duis dignissim feugiat elit porttitor tristique. Curabitur et laoreet sapien. Curabitur at orci leo. Nam viverra sed nulla ac consectetur. Sed nec mi vehicula, mattis ligula vitae, aliquet nisl. Integer tristique enim vitae nisl sodales facilisis. Donec sit amet sapien congue, rutrum leo ut, congue urna. Quisque feugiat lacus sit amet mauris faucibus tempus.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam aliquet blandit nulla sed gravida. Pellentesque sagittis purus massa, sit amet ultricies ex vulputate sed. Cras aliquet purus felis, ut vestibulum diam consequat a. Curabitur id metus nulla. Pellentesque id aliquam dui. Cras et suscipit nibh. In hac habitasse platea dictumst. Praesent porttitor ipsum lorem, id accumsan felis porta a. Phasellus dapibus pharetra placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+Fusce venenatis nulla vehicula justo congue, vel feugiat nisl fringilla. Mauris ultricies neque at laoreet fringilla. Duis eu odio enim. Donec eu velit faucibus, sodales arcu vel, facilisis justo. Proin nibh nisl, consequat vel tincidunt at, mollis eu ex. Aliquam justo neque, convallis et sagittis id, congue nec lectus. Fusce sit amet tempor nisi. In mi nibh, iaculis et blandit nec, egestas a magna. Cras in metus feugiat tellus maximus egestas ac ut dui. Aliquam in interdum elit, a cursus tellus. Nullam eu nibh sit amet turpis lacinia elementum vitae pulvinar tellus. Nullam a lacus eu lacus scelerisque iaculis et in libero. Nunc eget nibh vel ex malesuada vehicula. Aenean tempor lorem placerat augue rhoncus molestie.
+
+Aenean sed fermentum mauris. Donec sed dapibus ipsum. Mauris nec aliquam velit, non pharetra quam. Praesent ultrices tincidunt neque, vitae gravida turpis tempor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dapibus eros, non posuere risus venenatis molestie. Integer vulputate porttitor velit, ut molestie odio egestas at.
+    </div>
+</div>
+
+
+
 
 
 {% endblock %}

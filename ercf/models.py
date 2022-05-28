@@ -33,6 +33,14 @@ class Video(models.Model):
     title = models.TextField(default="title")
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
 
+class Sample(models.Model):
+    title = models.TextField()
+    description = models.TextField()
+    picture = models.ImageField()
+    file = models.FileField()
+    
+
+
     
     
     

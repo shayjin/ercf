@@ -60,7 +60,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {% if request.user.is_authenticated %}
-                <li><a class="dropdown-item" href="{% url "ercf:profile" request.user.id %}">View Profile</a></li>
+                <li><a class="dropdown-item" href="{% url "ercf:edit_user" request.user.id %}">Edit Profile</a></li>
                 <li><a class="dropdown-item" href="{% url "ercf:logout" %}">Log Out</a></li>
             {% else %}
                 <li><a class="dropdown-item" href="{% url "ercf:login" %}">Log In</a></li>

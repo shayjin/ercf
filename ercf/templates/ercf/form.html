@@ -23,10 +23,12 @@
 </style>
 
 <div class="goback">
-    {% if video %}
-        <a href="{% url "ercf:posts" %}" type="button" class="btn btn-primary">Go Back to Beats</a>
+    {% if beat %}
+        <a href="{% url "ercf:beats" %}" type="button" class="btn btn-primary">Go Back to Beats</a>
     {% elif not edit %}
         <a href="{% url "ercf:posts" %}" type="button" class="btn btn-primary">Go Back to Posts</a>
+    {% elif sample  %}
+        <a href="{% url "ercf:samples" %}" type="button" class="btn btn-primary">Go Back to Samples</a>
     {% else %}
         <a href="{% url "ercf:post" post.id %}" type="button" class="btn btn-primary">Go Back</a>
     {% endif %}

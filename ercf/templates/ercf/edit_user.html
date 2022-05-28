@@ -1,0 +1,33 @@
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+
+<style>
+  .container {
+    margin-top: -70px;
+    width: 30%;
+  }
+</style> 
+
+
+
+<div class="container">
+  <div class="layout__box">    
+    <h3>Edit @{{user.username}}'s Profile</h3>
+
+      <div class="layout__body">
+        <form class="form" method="POST" action="">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="Post"/>
+        </form>
+      </div>
+  </div>
+</div>
+</div>
+
+
+{% endblock %}
+
+
+

@@ -16,7 +16,7 @@ import pytube as pt
 import youtube_dl
 
 from .models import Post, Topic, Review, Video
-from .forms import PostForm, ReviewForm, VideoForm
+from .forms import PostForm, ReviewForm, SampleForm, SignUpForm, VideoForm
 
 from bs4 import BeautifulSoup
 import requests
@@ -58,11 +58,10 @@ def logoutUser(request):
     return redirect("ercf:index")
 
 def registerUser(request):
-    page = "register"
-    form = UserCreationForm()
+    form = SignUpForm()
     
     if request.method == "POST":
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
             user.username = user.username.lower()
@@ -72,7 +71,6 @@ def registerUser(request):
         else:
             messages.error(request, "Invalid request.")
     context = {
-        "page": page, 
         "form": form
     } 
     return render(request, "ercf/login.html", context)
@@ -176,12 +174,25 @@ def delete_post(request, pk):
     return render(request, "ercf/delete.html", {"post": post})
 
 
-def userProfile(request,pk):
+def editUser(request,pk):
     user = User.objects.get(id=pk)
+    form = SignUpForm()
+    form.fields["username"].widget.attrs['value'] = user.username
+    form.fields["email"].widget.attrs['value'] = user.email
     posts = user.post_set.all()
     reviews = user.review_set.all()
-    context = {"user": user, "posts": posts, "reviews": reviews}
-    return render(request, "ercf/profile.html", context)
+    form.username = "hi"
+    if request.method == "POST":
+        form = SignUpForm(request.POST, instance=user)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.username = user.username.lower()
+            user.save()
+            login(request, user)
+            return redirect("ercf:index")
+    context = {'form': form, "edit": True}
+    return render(request, 'ercf/edit_user.html', context)
+
 
 def beats(request):
     videos = Video.objects.all().order_by("-id")
@@ -215,8 +226,20 @@ def createVideo(request):
             form.save()
             return redirect('ercf:beats')
         
-    context = {"form": form, "edit": False, "video": True} 
+    context = {"form": form, "edit": False, "beat": True} 
     return render(request, "ercf/form.html", context)
 
 def samples(request):
     return render(request, "ercf/samples.html")
+
+def createSample(request):
+    form = SampleForm()
+    
+    if request.method == "POST":
+        form = SampleForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('ercf:samples')
+        
+    context = {"form": form, "sample": True, "edit": True} 
+    return render(request, "ercf/form.html", context)

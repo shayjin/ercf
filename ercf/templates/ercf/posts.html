@@ -37,7 +37,7 @@
         <table class="table table-striped" style="text-align: center;">
             <tr>
                 <th>#</th>
-                <th>TItle</th>
+                <th>Title</th>
                 <th>Author</th>
                 <th>Date</th>
             </tr>
@@ -53,21 +53,6 @@
 
     </div>
 
-    <div class="topics" style="margin-top: 25px;">
-        <h3>Topics</h3>
-        <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
-    
-
-        <div>
-            <a href="{% url "ercf:posts" %}">All</a>
-        </div>
-
-        {% for topic in topics %}
-            <div>
-                <a href="{% url "ercf:posts" %}?q={{topic.name}}">{{topic.name}}</a>
-            </div>
-        {% endfor %}
-    </div>
 </div>
 
 
