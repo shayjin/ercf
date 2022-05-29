@@ -109,7 +109,9 @@ def post(request, pk):
             review.author = post.author
             review.approved = True
             review.commenter = request.user
-            review.post_id = post.date_posted
+            review.post_date = post.date_posted
+            review.post_title = post.title
+            review.post_id = post.id
             review.save()
             return redirect('ercf:post', post.id)
         
@@ -170,14 +172,17 @@ def delete_post(request, pk):
         return HttpResponse("You are not allowed here!")
     
     if request.method == "POST":
+        for comment in Review.objects.all():
+            if comment.post_date == post.date_posted:
+                comment.delete()
         post.delete()
         return redirect("ercf:posts")
     return render(request, "ercf/delete.html", {"post": post})
 
 def viewUser(request,pk):
     user = User.objects.get(id=pk)
-    posts = user.post_set.all()
-    reviews = user.review_set.all()
+    posts = user.post_set.all().order_by("-id")
+    reviews = user.review_set.all().order_by("-id")
 
     context = {'user': user, 'posts': posts, 'reviews': reviews, 'posts_count': posts.count(), 'comments_count': reviews.count()}
     return render(request, 'ercf/view_user.html', context)

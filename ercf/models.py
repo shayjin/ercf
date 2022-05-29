@@ -23,7 +23,9 @@ class Review(models.Model):
     commenter = models.ForeignKey(User, on_delete=models.CASCADE, related_name="com")
     date_posted = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=True)
-    post_id = models.DateTimeField(auto_now_add=False)
+    post_date = models.DateTimeField(auto_now_add=False, default="1111-11-11 11:11")
+    post_title = models.TextField(default="")
+    post_id = models.TextField(default="")
     
     def __str__(self):
         return self.content
