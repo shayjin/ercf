@@ -1,0 +1,45 @@
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+
+<style>
+    .container {
+        margin-top: -70px;
+
+        text-align: center;
+    }
+    .profile-content {
+        margin-top: 30px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+</style>
+
+<div class="container">
+    @{{user.username}}'s Profile
+    <div class="profile-content">
+        <div>
+            <h4>My Beats</h4>
+            
+        </div>
+        <div>
+            <h4>My Posts</h4>
+            {% if posts_count == 0 %}
+                <a href="{% url 'ercf:posts' %}">Write some posts?</a>
+            {% else %}
+                {% for post in posts %}
+                <p><a href="{% url "ercf:post" post.id %}">{{ post.title }}</a> - {{ post.date_posted|date:'m/d/20y'}}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div>
+            <h4>My Comments</h4>
+            {% for comment in reviews %}
+               <p>"{{ comment.content }}" on <a href="{% url 'ercf:post' comment.post_id %}">{{ comment.post_title }}</a> {{ comment.date_posted|date:'m/d/20y'}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

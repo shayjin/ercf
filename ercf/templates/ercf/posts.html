@@ -46,7 +46,7 @@
                     <td>{{ post.id }}</td>
                     <td><a href="{% url "ercf:post" post.id %}">{{ post.title }}</a></td>
                     <td>@{{ post.author }}</td>
-                    <td>{{ post.date_posted|date:'m-d-20y'  }}</td>
+                    <td>{{ post.date_posted|date:'m/d/20y'  }}</td>
                 </tr>
             {% endfor %}
         </table>

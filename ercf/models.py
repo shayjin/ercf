@@ -23,6 +23,7 @@ class Review(models.Model):
     commenter = models.ForeignKey(User, on_delete=models.CASCADE, related_name="com")
     date_posted = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=True)
+    post_id = models.DateTimeField(auto_now_add=False)
     
     def __str__(self):
         return self.content

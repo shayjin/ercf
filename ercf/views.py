@@ -109,6 +109,7 @@ def post(request, pk):
             review.author = post.author
             review.approved = True
             review.commenter = request.user
+            review.post_id = post.date_posted
             review.save()
             return redirect('ercf:post', post.id)
         
@@ -173,14 +174,20 @@ def delete_post(request, pk):
         return redirect("ercf:posts")
     return render(request, "ercf/delete.html", {"post": post})
 
+def viewUser(request,pk):
+    user = User.objects.get(id=pk)
+    posts = user.post_set.all()
+    reviews = user.review_set.all()
+
+    context = {'user': user, 'posts': posts, 'reviews': reviews, 'posts_count': posts.count(), 'comments_count': reviews.count()}
+    return render(request, 'ercf/view_user.html', context)
+
 
 def editUser(request,pk):
     user = User.objects.get(id=pk)
     form = SignUpForm()
     form.fields["username"].widget.attrs['value'] = user.username
     form.fields["email"].widget.attrs['value'] = user.email
-    posts = user.post_set.all()
-    reviews = user.review_set.all()
     form.username = "hi"
     if request.method == "POST":
         form = SignUpForm(request.POST, instance=user)

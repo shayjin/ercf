@@ -74,7 +74,7 @@
             {% endif %}
 
             {% for review in reviews %}
-                {% if review.author == post.author %}
+                {% if review.post_id == post.date_posted %}
                 <p style="width:80px;">
                     <hr style="width: 85%; margin-right: 250px;">
                     <b>@{{ review.commenter }}</b>: {{ review.content }}
