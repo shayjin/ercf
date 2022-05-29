@@ -142,6 +142,7 @@ def create_post(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            post.author_identity = request.user.id
             post.save()
             return redirect('ercf:posts')
         

@@ -46,7 +46,7 @@
     <hr style="margin: auto auto; width: 800px;">
 
     <div class="description">
-        <p>Posted by <b>@{{post.author}}</b> on <b>{{post.date_posted}}</b></p>
+        <p>Posted by @<a href="{% url 'ercf:view_user' post.author_identity %}"><b>{{post.author}}</b></a> on <b>{{post.date_posted}}</b></p>
         {% if request.user == post.author %}
             <p style="margin-bottom: 10px; margin-top:-10px;">
                 <a href="{% url "ercf:update" post.id %}">Edit</a>

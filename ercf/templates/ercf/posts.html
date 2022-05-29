@@ -1,8 +1,10 @@
 {% extends "ercf/layout.html" %}
 {% load static %}
 {% block body %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
 
 <style>
+
     .search-container {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
@@ -45,7 +47,7 @@
                 <tr> 
                     <td>{{ post.id }}</td>
                     <td><a href="{% url "ercf:post" post.id %}">{{ post.title }}</a></td>
-                    <td>@{{ post.author }}</td>
+                    <td>@<a href="{% url 'ercf:view_user' post.author_identity %}">{{ post.author }}</a></td>
                     <td>{{ post.date_posted|date:'m/d/20y'  }}</td>
                 </tr>
             {% endfor %}

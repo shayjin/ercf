@@ -10,7 +10,6 @@
     border-style:none;
 } 
 
-
 .video-selections img, .video-selections button{
     width: 26.666vw;
     height: 15vw;
@@ -27,7 +26,6 @@
     text-align: center;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
 .video-selections div {
@@ -61,14 +59,14 @@
 </div>
 
 <div class="main-video">
-    <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/{{ first_video_id }}" frameborder="0" allowfullscreen></iframe>
+    <iframe id="main-video" width="500" height="270" src="https://www.youtube.com/embed/{{ first_video_id }}" frameborder="0" allowfullscreen></iframe>
 </div>
 <br/>
 <button class="button">Download</button>
 
-<div class="topics" style="margin-top: 25px;">
+<div class="topics" style="margin-top: 25px; font-size: 50%;">
     <center>
-        <h3>Genres</h3>
+        <b>Genres</b>
         <hr style="width: 80px; margin-top: 7px; margin-bottom: 7px;">
         <a href="{% url "ercf:beats" %}">All</a>
         {% for topic in topics %}
@@ -86,8 +84,8 @@
         <div>
             <img src="https://i.ytimg.com/vi/{{ video.video_id }}/hqdefault.jpg" onclick="displayVideo('{{ video.video_id }}')">
             <br/>
-            {{ video.title }}
-        </div>
+            <p style="width:80%; font-size: 60%; margin-left: auto; margin-right: auto; margin-top:-15px;">{{ video.title }}</p>
+        </div> 
     {% endfor %}
 
 </div>
