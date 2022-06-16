@@ -40,8 +40,12 @@ class Video(models.Model):
 class Sample(models.Model):
     title = models.TextField()
     description = models.TextField()
-    picture = models.ImageField()
-    file = models.FileField()
+    picture = models.ImageField(
+                upload_to="images/"
+              )
+    images = models.FileField(upload_to="documents/", null=True, blank=True)
+    url = models.TextField(null=True, default="?")
+    music_url = models.TextField(null=True, default="?")
     
 
 

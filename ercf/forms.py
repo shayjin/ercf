@@ -24,7 +24,7 @@ class SampleForm(forms.ModelForm):
     description = forms.CharField(label="Description",widget=forms.Textarea(attrs={'cols': 50, 'rows': 10}), )
     class Meta:
         model = Sample
-        fields = ['title', 'description', 'picture', 'file']
+        fields = ['title', 'description', 'picture']
 
 
 class SignUpForm(UserCreationForm):

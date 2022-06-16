@@ -1,5 +1,8 @@
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 app_name = "ercf"
 
@@ -20,5 +23,5 @@ urlpatterns = [
     path('beats/', views.beats, name='beats'),
     path('samples/', views.samples, name='samples'),
     path('create_video/', views.createVideo, name='create_video'),
-    path('create_sample/', views.createSample, name='create_sample'),
-]
+    path('create_sample', views.createSample, name='create_sample')
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

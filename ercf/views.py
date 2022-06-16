@@ -15,7 +15,7 @@ from django.contrib.auth.forms import UserCreationForm
 import pytube as pt
 import youtube_dl
 
-from .models import Post, Topic, Review, Video
+from .models import Post, Topic, Review, Video, Sample
 from .forms import PostForm, ReviewForm, SampleForm, SignUpForm, VideoForm
 
 from bs4 import BeautifulSoup
@@ -243,7 +243,15 @@ def createVideo(request):
     return render(request, "ercf/form.html", context)
 
 def samples(request):
-    return render(request, "ercf/samples.html")
+    samples =  Sample.objects.all().order_by("-id")
+    for sample in samples:
+        sibal = "/ercf" + sample.picture.url
+        sibal2 = "/ercf" + sample.images.url
+        print(sample.images.url)
+        sample.url = sibal
+        sample.music_url = sibal2
+    context = {"samples": samples}
+    return render(request, "ercf/samples.html", context)
 
 def createSample(request):
     form = SampleForm()
