@@ -223,9 +223,11 @@ def beats(request):
         soup = BeautifulSoup(html_text, 'lxml')
         soup.prettify()
         video.title = soup.title.string
+        video.audio_url = "/ercf/media/" + str(video.audio)
         if first:
             first_video_id = video.video_id
             first = False
+
     context = {"videos": videos, "first_video_id": first_video_id, "topics": topics}
         
     return render(request, "ercf/beats.html", context)

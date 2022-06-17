@@ -13,9 +13,12 @@
     }
 
     .navbar a {
-        font-size: 1.5vw;
         margin-left:3vw;
-        margin-right:5vw;
+        margin-right:3vw;
+    }
+
+    h6 {
+        font-size:13px;
     }
 
     @media screen and (max-width: 900px) {
@@ -49,7 +52,9 @@
     </div>
 
     <div class="navbar">
-        <a href="{% url "ercf:beats" %}"><h6>Beats</h6></a>
+        <a href="{% url "ercf:beats" %}"><h6>Artists</h6></a>
+        <a href="{% url "ercf:beats" %}"><h6>Music</h6></a>
+        <a href="{% url "ercf:beats" %}"><h6>Type Beats</h6></a>
         <a href="{% url "ercf:samples" %}"><h6>Samples</h6></a>
         <a href="{% url "ercf:posts" %}"><h6>Forum</h6></a>
             

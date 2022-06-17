@@ -33,6 +33,8 @@ class Review(models.Model):
     
 class Video(models.Model):
     url = models.TextField()
+    audio = models.FileField(upload_to="documents/", null=True, blank=True)
+    audio_url = models.TextField(null=True, default="?")
     video_id = models.TextField(default="id")
     title = models.TextField(default="title")
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
