@@ -6,13 +6,24 @@
 <style>
 .container {
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
+    margin-top:-50px;
+}
+
+.container img {
+  width: 20vw;
+  height: auto;
 }
 
 .header {
     margin-bottom: 30px;
     margin-top: -80px;
     text-align:center;
+}
+
+audio {
+  width: 50%;
+  height: 2vw;
 }
 
 
@@ -360,23 +371,22 @@
     filter: invert(100%);
   }
 </style>
-<div class="header">
-    <a href="{% url 'ercf:create_sample' %}" type="button" class="btn btn-primary">Create a Post</a>
-</div>
-
 <div class="container">
     {% for sample in samples %}
-    <div>
+    <div style="margin-left: 5vw;">
         <img src="{{ sample.url }}">
-    </div>
-    <div>
         <h3>{{ sample.title }}</h3>
         {{ sample.description }}
     </div>
     <div>
+      <hr style="margin-top: 0px; margin-bottom: 0.5vw;">
+      {% for audio in sample.ss %}
         <audio controls>
-            <source src="{{ sample.music_url}}" type="audio/mpeg">
+            <source src="{{ audio }}" type="audio/mpeg">
         </audio>
+        <span>{{ audio|slice:"22:" }}</span>
+        <hr style="margin-top: 0px; margin-bottom: 0.5vw;">
+      {% endfor %}
     </div>
     {% endfor %}
 </div>

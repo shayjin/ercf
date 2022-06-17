@@ -245,11 +245,18 @@ def createVideo(request):
 def samples(request):
     samples =  Sample.objects.all().order_by("-id")
     for sample in samples:
-        sibal = "/ercf" + sample.picture.url
-        sibal2 = "/ercf" + sample.images.url
-        print(sample.images.url)
-        sample.url = sibal
-        sample.music_url = sibal2
+        sample.url = "/ercf" + sample.picture.url
+        sample.s1_url = "/ercf" + sample.s1.url
+        sample.s2_url = "/ercf" + sample.s2.url
+        sample.s3_url = "/ercf" + sample.s3.url
+        sample.s4_url = "/ercf" + sample.s4.url
+        sample.s5_url = "/ercf" + sample.s5.url
+        sample.s6_url = "/ercf" + sample.s6.url
+        sample.s7_url = "/ercf" + sample.s7.url
+        sample.s8_url = "/ercf" + sample.s8.url
+        sample.s9_url = "/ercf" + sample.s9.url
+        sample.s10_url = "/ercf" + sample.s10.url
+        sample.ss = [sample.s1_url, sample.s2_url, sample.s3_url, sample.s4_url, sample.s5_url, sample.s6_url, sample.s7_url, sample.s8_url, sample.s9_url, sample.s10_url]
     context = {"samples": samples}
     return render(request, "ercf/samples.html", context)
 

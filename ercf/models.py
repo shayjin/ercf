@@ -43,9 +43,28 @@ class Sample(models.Model):
     picture = models.ImageField(
                 upload_to="images/"
               )
-    images = models.FileField(upload_to="documents/", null=True, blank=True)
+    s1 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s2 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s3 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s4 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s5 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s6 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s7 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s8 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s9 = models.FileField(upload_to="documents/", null=True, blank=True)
+    s10 = models.FileField(upload_to="documents/", null=True, blank=True)
+    ss = []
     url = models.TextField(null=True, default="?")
-    music_url = models.TextField(null=True, default="?")
+    s1_url = models.TextField(null=True, default="?")
+    s2_url = models.TextField(null=True, default="?")
+    s3_url = models.TextField(null=True, default="?")
+    s4_url = models.TextField(null=True, default="?")
+    s5_url = models.TextField(null=True, default="?")
+    s6_url = models.TextField(null=True, default="?")
+    s7_url = models.TextField(null=True, default="?")
+    s8_url = models.TextField(null=True, default="?")
+    s9_url = models.TextField(null=True, default="?")
+    s10_url = models.TextField(null=True, default="?")
     
 
 
