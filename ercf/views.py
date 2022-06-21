@@ -273,3 +273,9 @@ def createSample(request):
         
     context = {"form": form, "sample": True, "edit": True} 
     return render(request, "ercf/form.html", context)
+
+def artists(request):
+    return render(request, "ercf/artists.html")
+
+def music(request):
+    return render(request, "ercf/music.html")

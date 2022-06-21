@@ -1,0 +1,77 @@
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+<style>
+
+    ul  {
+        display: grid;
+    grid-gap: 0px;
+    padding: 20;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    list-style: none;
+    }
+
+    ul li {
+        display: flex;/ercf/ballboy_da_mogi_killer.html
+        flex-flow: row wrap;
+        justify-content: center;
+        border: 3px solid white;
+    }
+    img {
+        width: 270px;
+        height:270px;
+        border-radius: 5%;
+    }
+    
+    p {
+        text-align: center;
+    }
+
+</style>
+
+<div class="body" style="margin-top:-100px;">
+    <ul>
+        <li>
+            <a href="minecraft_boi.html">
+                <img src="{% static "images/shay_jin.png" %}" alt="Minecraft Boi"/>
+                <p>Minecraft Boi</p>
+            </a>
+        </li>
+        <li>
+            <a href="billy_boi.html">
+                <img src="{% static "images/billy_boi.jpg" %}" alt="Billy Boi"/>
+                <p>Billy Boi</p>
+            </a>
+        </li>
+        <li>
+            <a href="ballboy_da_mogi_killer.html">
+                <img src="{% static "images/ballboy_da_mogi_killer.jpg" %}" alt="Ballboy Da Mogi Killer"/>
+                <p>Ballboy Da Mogi Killer</p>
+            </a>
+        </li>
+        <li>
+            <a href="mogi.html">
+                <img src="{% static "images/mogi.png" %}" alt="Mogi"/>
+                <p>Mogi</p>
+            </a>
+        </li>
+        <li>
+            <a href="shay_jin.html">
+                <img src="{% static "images/minecraft_boi.png" %}" alt="Shay Jin"/>
+                <p>Shay Jin</p>
+            </a>
+        </li>
+        <li>
+            <a href="mst.html">
+                <img src="{% static "images/mst.jpg" %}" alt="MST"/>
+                <p>MST</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+{% endblock %}

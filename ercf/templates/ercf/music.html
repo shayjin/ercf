@@ -1,0 +1,106 @@
+
+{% extends "ercf/layout.html" %}
+{% load static %}
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    ul  {
+        display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    list-style: none;
+    }
+
+    ul li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        border: 3px solid white;
+    }
+    img {
+        width: 300px;
+        height:300px;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="body" style="margin-top:-100px;">
+    <ul>
+        <li>
+            <a href=".html">
+                <img src="{% static "images/cresent.jpeg" %}" alt=""/>
+                <p>Cresent</p>
+                <p>MST</p>
+                <p>2022.04.09</p>
+            </a>
+        </li>
+        <li>
+            <a href=".html">
+                <img src="{% static "images/uztv.jpeg" %}" alt=""/>
+                <p>So What TV</p>
+                <p>MST</p>
+                <p>2022.03.31</p>
+            </a>
+        </li>
+        <li>
+            <a href=".html">
+                <img src="{% static "images/latale.jpeg" %}" alt=""/>
+                <p>La Tale</p>
+                <p>MST</p>
+                <p>2022.01.29</p>
+            </a>
+        </li>
+        <li>
+            <a href=".html">
+                <img src="{% static "images/jinseo.png" %}" alt=""/>
+                <p>Jinseo</p>
+                <p>Shay Jin & MST</p>
+                <p>2021.08.13</p>
+            </a>
+        </li>
+        <li>
+            <a href=".html">
+                <img src="{% static "images/ballboypower.jpeg" %}" alt=""/>
+                <p>Ballboy Power!</p>
+                <p>Ballboy Da Mogi Killer</p>
+                <p>2021.07.28</p>
+            </a>
+        </li>
+            <li>
+                <a href="kik.html">
+                    <img src="{% static "images/kik.jpg" %}" alt="Shay Jin X Billy Boi - KIK"/>
+                    <p>KIK</p>
+                    <p>Shay Jin & Billy Boi</p>
+                    <p>2021.02.26</p>
+                </a>
+            </li>
+            <li>
+                <a href="pom.html">
+                    <img src="{% static "images/pom.png" %}" alt="Shay Jin X Billy Boi - POM"/>
+                    <p>POM</p>
+                    <p>Shay Jin & Billy Boi</p>
+                    <p>2020.06.17</p>
+                </a>
+            </li>
+            <li>
+                <a href="gang.html">
+                 <img src="{% static "images/gang.png" %}" alt="Shay Jin X Billy Boi - GANG"/>
+                <p>GANG</p>
+                <p>Shay Jin & Billy Boi</p>
+                <p>2020.05.06</p>   
+                </a>
+            </li>
+            <li>
+                <a href="juck.html">
+                    <img src="{% static "images/juck.png" %}" alt="Shay Jin - JUCK"/>
+                    <p>JUCK</p>
+                    <p>Shay Jin</p>
+                    <p>2020.01.18</p>
+                </a>
+            </li>
+    </ul>
+</div>
+
+{% endblock %}

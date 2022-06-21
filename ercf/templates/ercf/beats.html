@@ -5,10 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 body {
-    background-image: linear-gradient(to bottom right, #333, #111);
-    background-repeat: no-repeat;
     height: 100%;
-    color: white;
      margin: 0;
      background-attachment: fixed;
 }
@@ -68,7 +65,7 @@ body {
       width: 98px;
     }
   }
-  /*------------------------------------------------*/
+  /*
 
   .charger {
     display: flex;
@@ -404,8 +401,26 @@ body {
     filter: invert(100%);
   }
 
+
+  .p {
+    background-image: linear-gradient(to bottom right, #333, #111);
+    background-repeat: no-repeat;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .p:hover {background-color: #e7e7e7;}
+*/
 </style>
 
+<!--
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style=" display: flex; justify-content: center;">
     <li class="nav-item" role="presentation">
       <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Video View</a>
@@ -456,15 +471,28 @@ justify-content: center; margin-top: -200px;">
   </div>
 </div>
 
-<div style="margin-top:100px; margin-left: 50px;">
+<div style="margin-top:100px; margin-left: 50px; overflow-y:auto;
+float:left;
+position:relative;height:35vw;
+width:35vw;">
     {% for video in videos %} 
+    
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
+        <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
         <button class="p" onclick="displayOnPhone('{{ video.video_id }}', '{{ video.audio_url }}')">{{ video.title }}</button><br>
     {% endfor %}
 </div>
 
-
-<!--
-                <div class="main-video">
+-->
+                <div class="main-video" style="margin-top:-50px;">
                     <iframe id="main-video" width="500" height="270" src="https://www.youtube.com/embed/{{ first_video_id }}" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <br/>
@@ -493,15 +521,29 @@ justify-content: center; margin-top: -200px;">
         
                 </div>
 
-            -->
+            
 <script>
-
+/*
 function displayOnPhone(id, audio) {
     var ytString = "https://i.ytimg.com/vi/" + id + "/hqdefault.jpg"
     document.getElementById('currentSong').src = ytString;
     document.getElementById('mp3').src = audio;
     selectedVideo = ytString;
     playerButton.innerHTML = pauseIcon;
+}*/
+
+
+function scroll() {
+  const element = document.getElementById("top");
+  element.scrollIntoView({behavior: "smooth"});
+}
+
+function displayVideo(id) {
+  var ytString = "https://www.youtube.com/embed/" + id;
+  document.getElementById('main-video').src = ytString;
+  selectedVideo = ytString;
+  $(".button").html('Download');
+  scroll();
 }
 
 $(".button").click(function() {
@@ -535,7 +577,7 @@ $('#' + viewName).show();
 
 // Lel 
 
-
+/*
 
 const playerButton = document.querySelector('.player-button'),
 audio = document.querySelector('audio'),
@@ -599,6 +641,7 @@ soundButton.innerHTML = audio.muted ? muteIcon : soundIcon;
 }
 
 soundButton.addEventListener('click', toggleSound);
+*/
 </script>
 
 

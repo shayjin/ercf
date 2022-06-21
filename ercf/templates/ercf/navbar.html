@@ -8,6 +8,11 @@
         margin-left: 10vw;
     }
 
+    .pic {
+        width: 60px; 
+        height: auto;
+    }
+
     .top a {
         float: left;
     }
@@ -44,16 +49,16 @@
 
 
 </style>
-<div class="top">
+<div class="top" id="top">
     <div>
         <a class="logo" href="{% url "ercf:index" %}">
-            <h1>????</h1>
+            <img class="pic" src="{% static "images/logo_white.png" %}">
         </a>
     </div>
 
     <div class="navbar">
-        <a href="{% url "ercf:beats" %}"><h6>Artists</h6></a>
-        <a href="{% url "ercf:beats" %}"><h6>Music</h6></a>
+        <a href="{% url "ercf:artists" %}"><h6>Artists</h6></a>
+        <a href="{% url "ercf:music" %}"><h6>Music</h6></a>
         <a href="{% url "ercf:beats" %}"><h6>Type Beats</h6></a>
         <a href="{% url "ercf:samples" %}"><h6>Samples</h6></a>
         <a href="{% url "ercf:posts" %}"><h6>Forum</h6></a>
