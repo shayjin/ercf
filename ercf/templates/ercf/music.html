@@ -25,82 +25,98 @@
         text-align: center;
         margin-bottom: 0px;
     }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 103%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        height: 90%;
+        margin:auto;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button {
+        border: none;
+        background-color: white;
+      }
+
+      #des {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
 </style>
 <div class="body" style="margin-top:-100px;">
     <ul>
-        <li>
-            <a href=".html">
-                <img src="{% static "images/cresent.jpeg" %}" alt=""/>
-                <p>Cresent</p>
-                <p>MST</p>
-                <p>2022.04.09</p>
-            </a>
-        </li>
-        <li>
-            <a href=".html">
-                <img src="{% static "images/uztv.jpeg" %}" alt=""/>
-                <p>So What TV</p>
-                <p>MST</p>
-                <p>2022.03.31</p>
-            </a>
-        </li>
-        <li>
-            <a href=".html">
-                <img src="{% static "images/latale.jpeg" %}" alt=""/>
-                <p>La Tale</p>
-                <p>MST</p>
-                <p>2022.01.29</p>
-            </a>
-        </li>
-        <li>
-            <a href=".html">
-                <img src="{% static "images/jinseo.png" %}" alt=""/>
-                <p>Jinseo</p>
-                <p>Shay Jin & MST</p>
-                <p>2021.08.13</p>
-            </a>
-        </li>
-        <li>
-            <a href=".html">
-                <img src="{% static "images/ballboypower.jpeg" %}" alt=""/>
-                <p>Ballboy Power!</p>
-                <p>Ballboy Da Mogi Killer</p>
-                <p>2021.07.28</p>
-            </a>
-        </li>
+        {% for album in albums %}
             <li>
-                <a href="kik.html">
-                    <img src="{% static "images/kik.jpg" %}" alt="Shay Jin X Billy Boi - KIK"/>
-                    <p>KIK</p>
-                    <p>Shay Jin & Billy Boi</p>
-                    <p>2021.02.26</p>
-                </a>
+                <button id="myBtn" onclick="btn(' {{ album.des }}  ')">
+                    <img src="{{ album.picture_url }}">
+                    <p>{{ album.name }}</p>
+                    <p>{{ album.artist }}</p>
+                    <p>{{ album.date }}</p>
+                </button>  
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="span()">&times;</span>
+                            <p id="des">
+                            </p>
+                        </div>
+                    </div>
             </li>
-            <li>
-                <a href="pom.html">
-                    <img src="{% static "images/pom.png" %}" alt="Shay Jin X Billy Boi - POM"/>
-                    <p>POM</p>
-                    <p>Shay Jin & Billy Boi</p>
-                    <p>2020.06.17</p>
-                </a>
-            </li>
-            <li>
-                <a href="gang.html">
-                 <img src="{% static "images/gang.png" %}" alt="Shay Jin X Billy Boi - GANG"/>
-                <p>GANG</p>
-                <p>Shay Jin & Billy Boi</p>
-                <p>2020.05.06</p>   
-                </a>
-            </li>
-            <li>
-                <a href="juck.html">
-                    <img src="{% static "images/juck.png" %}" alt="Shay Jin - JUCK"/>
-                    <p>JUCK</p>
-                    <p>Shay Jin</p>
-                    <p>2020.01.18</p>
-                </a>
-            </li>
+        {% endfor %}
     </ul>
 </div>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+   function btn(des) {
+        modal.style.display = "block";
+        document.getElementById("des").innerHTML = des;
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    function span() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
 
 {% endblock %}

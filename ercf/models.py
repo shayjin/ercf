@@ -68,6 +68,21 @@ class Sample(models.Model):
     s9_url = models.TextField(null=True, default="?")
     s10_url = models.TextField(null=True, default="?")
     
+    
+    
+class Artist(models.Model):
+    name = models.TextField()
+    picture = models.ImageField(upload_to="images/")
+    picture_url = models.TextField(null=True, default="?")
+    
+    
+class Album(models.Model):
+    name = models.TextField()
+    artist = models.TextField()
+    date = models.TextField()
+    picture = models.ImageField(upload_to="images/")
+    picture_url = models.TextField(null=True, default="?")
+    des = models.TextField()
 
 
     
