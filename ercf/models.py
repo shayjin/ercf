@@ -74,7 +74,7 @@ class Artist(models.Model):
     name = models.TextField()
     picture = models.ImageField(upload_to="images/")
     picture_url = models.TextField(null=True, default="?")
-    
+    appearsOn = models.TextField()
     
 class Album(models.Model):
     name = models.TextField()

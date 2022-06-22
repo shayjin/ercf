@@ -15,7 +15,7 @@
     }
 
     ul li {
-        display: flex;/ercf/ballboy_da_mogi_killer.html
+        display: flex;
         flex-flow: row wrap;
         justify-content: center;
         border: 3px solid white;
@@ -79,7 +79,7 @@
     <ul>
             {% for artist in artists %}
                 <li>
-                <button id="myBtn" onclick="btn('{{ artist.name }}')">
+                <button id="myBtn" onclick="btn('{{ artist.name }}', '{{ artist.appearsOn }}')">
                     <img src="{{ artist.picture_url }}">
                     <p>{{ artist.name }}</p>
                 </button> 
@@ -88,6 +88,8 @@
                             <span class="close" onclick="span()">&times;</span>
                             <p id="des">
                             </p>
+                            <div id="albums" style="text-align: center;">
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -98,22 +100,35 @@
 <script>
     var modal = document.getElementById("myModal");
 
-   function btn(des) {
+   function btn(des, appearsOn) {
         if (modal.style.display == "none") {
             modal.style.display = "block";
             document.getElementById("des").innerHTML = des;
+            const arr = appearsOn.split(" ");
+            console.log(arr);
+            var albums = document.getElementById('albums')
+            arr.forEach(album => 
+                {
+                    var image = document.createElement('img');
+                    image.style = "width: 7%; height: 7%;";
+                    image.src = "media/images/" + album + ".png";
+                    albums.appendChild(image);
+                }
+            );
         }
     }
 
     // When the user clicks on <span> (x), close the modal
     function span() {
         modal.style.display = "none";
+        document.getElementById('albums').innerHTML = "";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        document.getElementById('albums').innerHTML = "";
     }
     }
 </script>
