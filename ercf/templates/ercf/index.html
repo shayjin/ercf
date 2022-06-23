@@ -2,8 +2,23 @@
 {% load static %}
 {% block body %}
 <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
-<div style="background: rgb(235, 240, 250); width: 80vw; height: 40vw; margin: auto auto; margin-top:-80px;">
-    <img style="width:55vw; display: block; margin: auto auto; padding:50px;" class="index-pic" src="{% static 'images/cd.jpeg' %}">
-</div>
 
+<style>
+    .main-pic {
+        width:550px; 
+        height: 550px;
+        display: block; 
+        margin: auto auto; 
+        margin-top:-80px;
+    }
+    @media screen and (max-width: 550px) {
+        .main-pic {
+            width: 100vw;
+            height: 100vw;
+        }
+
+    }
+</style>
+    <img class="main-pic"  class="index-pic" src="{% static 'images/cd.jpeg' %}">
+<br/><br/>
 {% endblock %}

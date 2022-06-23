@@ -46,7 +46,7 @@
         padding: 20px;
         border: 1px solid #888;
         width: 50%;
-        height: 90%;
+        height: %;
         margin:auto;
       }
       
@@ -75,6 +75,13 @@
         margin-left: auto;
         margin-right: auto;
       }
+
+      @media all and (max-width: 1000px) {
+        #des {
+            font-size: 1.5vw;
+        }
+      }
+
 </style>
 <div class="body" style="margin-top:-100px;">
     <ul>
@@ -101,10 +108,12 @@
 <script>
     var modal = document.getElementById("myModal");
 
-   function btn(des) {
-        modal.style.display = "block";
-        document.getElementById("des").innerHTML = des;
+   
 
+   function btn(des) {
+        document.getElementById("des").innerHTML = des;
+        modal.style.display = "block";
+        
     }
 
     // When the user clicks on <span> (x), close the modal
