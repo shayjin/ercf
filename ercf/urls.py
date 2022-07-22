@@ -26,4 +26,5 @@ urlpatterns = [
     path('create_sample', views.createSample, name='create_sample'),
     path('artists', views.artists, name='artists'),
     path('music', views.music, name='music'),
+    path('aboutUs', views.aboutUs, name='about_us'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

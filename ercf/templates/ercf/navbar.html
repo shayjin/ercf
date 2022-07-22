@@ -108,18 +108,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="top" id="top">
     <div>
-        <a class="logo" href="{% url "ercf:index" %}">
-            <img class="pic" src="{% static "images/logo_white.png" %}">
+        <a class="logo" href="{% url 'ercf:index' %}">
+            <img class="pic" src="{% static 'images/logo_white.png' %}">
         </a>
     </div>
     <div class="topnav" id="myTopnav">
         <a style="display:none;">hi</a>
-        <a href="{% url "ercf:index" %}">Home</a>
-        <a href="{% url "ercf:artists" %}">Artists</a>
-        <a href="{% url "ercf:music" %}">Music</a>
-        <a href="{% url "ercf:beats" %}">Type Beats</a>
-        <a href="{% url "ercf:samples" %}">Samples</a>
-        <a href="{% url "ercf:posts" %}">Forum</a>
+        <a href="{% url 'ercf:index' %}">Home</a>
+        <a href="{% url 'ercf:artists' %}">Artists</a>
+        <a href="{% url 'ercf:music' %}">Music</a>
+        <a href="{% url 'ercf:beats' %}">Type Beats</a>
+        <a href="{% url 'ercf:samples' %}">Samples</a>
+        <a href="{% url 'ercf:posts' %}">Forum</a>
+        <!---<a href="{% url 'ercf:about_us' %}">About Us</a>--->
         <a href="javascript:void();" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -127,15 +128,15 @@
 
     <div class="dropdown" style="margin-top:5px; margin-left: 30px;">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img style="width: 1.3vw; height: 1.3vw;" src="{% static "images/user.png" %}">
+          <img style="width: 1.3vw; height: 1.3vw;" src="{% static 'images/user.png' %}">
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {% if request.user.is_authenticated %}
-                <li><a class="dropdown-item" href="{% url "ercf:view_user" request.user.id %}">View Profile</a></li>
-                <li><a class="dropdown-item" href="{% url "ercf:edit_user" request.user.id %}">Edit Profile</a></li>
-                <li><a class="dropdown-item" href="{% url "ercf:logout" %}">Log Out</a></li>
+                <li><a class="dropdown-item" href="{% url 'ercf:view_user' request.user.id %}">View Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'ercf:edit_user' request.user.id %}">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'ercf:logout' %}">Log Out</a></li>
             {% else %}
-                <li><a class="dropdown-item" href="{% url "ercf:login" %}">Log In</a></li>
+                <li><a class="dropdown-item" href="{% url 'ercf:login' %}">Log In</a></li>
             {% endif %}
         </ul>
     </div>

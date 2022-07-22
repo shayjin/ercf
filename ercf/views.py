@@ -27,6 +27,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 name = 'shay'
+
    
 def loginUser(request):
     page = "login"
@@ -132,6 +133,9 @@ def deleteComment(request, pk):
 
 def navbar(request):
     return render(request, "ercf/navbar.html")
+
+def aboutUs(request):
+    return render(request, "ercf/aboutUs.html")
 
 @login_required(login_url="ercf:login")   
 def create_post(request):
