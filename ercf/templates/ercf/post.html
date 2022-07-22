@@ -27,10 +27,7 @@
         border-radius: 25px;
     }
 
-    .comment {
-        display:grid;
-        grid-template-columns: 1.5fr 3fr 1fr;
-    }
+
 
     .comment-container {
         display:flex;
@@ -38,6 +35,11 @@
 
     .comment-content {
         width: 100px;
+    }
+
+    .comment-block {
+        margin: 0 auto; 
+        width:550px;
     }
 
 </style>
@@ -49,8 +51,8 @@
         <p>Posted by @<a href="{% url 'ercf:view_user' post.author_identity %}"><b>{{post.author}}</b></a> on <b>{{post.date_posted}}</b></p>
         {% if request.user == post.author %}
             <p style="margin-bottom: 10px; margin-top:-10px;">
-                <a href="{% url "ercf:update" post.id %}">Edit</a>
-                <a id="delete" href="{% url "ercf:delete" post.id %}">Delete</a>
+                <a href="{% url 'ercf:update' post.id %}">Edit</a>
+                <a id="delete" href="{% url 'ercf:delete' post.id %}">Delete</a>
             </p>
     {% endif %}
     </div>
@@ -60,10 +62,10 @@
     </div>
 <br/>
     <div class="comment">
-        <div></div>
+        
         <div>
             {% if request.user.is_authenticated %}
-                <div>
+                <div class="comment-block">
                     <form class="comment-container" method="POST" action="">
                         {% csrf_token %}
                         {{ form.as_p }}
@@ -75,17 +77,19 @@
 
             {% for review in reviews %}
                 {% if review.post_date == post.date_posted %}
-                <p style="width:80px;">
-                    <hr style="width: 85%; margin-right: 250px;">
-                    <b>@{{ review.commenter }}</b>: {{ review.content }}
+                <p style="width:80%;">
+                    <hr style="width: 800px; ">
+                    <div style="text-align: left; width: 700px; margin-left: auto; margin-right: auto;">
+                        <b>@{{ review.commenter }}</b>: {{ review.content }}
                     {% if request.user == review.author or request.user == review.commenter%}
-                        <a id="delete" href="{% url "ercf:delete_comment" review.id %}">Delete</a>
+                        <a id="delete" href="{% url 'ercf:delete_comment' review.id %}">Delete</a>
                     {% endif%}
+                    </div>
                 </p>
                 {% endif %}
             {% endfor %}
         </div>
-        <div></div>
+        
     </div>
 </div>
 <script>
