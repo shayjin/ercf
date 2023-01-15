@@ -29,14 +29,14 @@ ul  {
 grid-gap: 0px;
 padding: 20;
 margin-left: 0px;
-margin-right: 50px;
+margin-right: 0px;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 list-style: none;
 }
 
 .artistUl {
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .artistUl p {
@@ -191,7 +191,7 @@ a {
 @media screen and (max-width: 625px) {
   .body2 img {
     width: 96vw;
-    height: 56vw;
+    height: 96vw;
   }
 }
 
@@ -202,7 +202,6 @@ a {
 }
 
 .links li {
-
   float: left;
 }
 

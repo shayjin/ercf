@@ -11,16 +11,16 @@ export const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/About">About</a>
+              <a class="nav-link" href="/ERCF/About">About</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/Artists">Artists</a>
+              <a class="nav-link" href="/ERCF/Artists">Artists</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/Music">Music</a>
+              <a class="nav-link" href="/ERCF/Music">Music</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/Contact">Contact</a>
+              <a class="nav-link" href="/ERCF/Contact">Contact</a>
             </li>
           </ul>
         </div>
