@@ -8,14 +8,15 @@ import { Album } from "./Album";
 import { About } from "./About";
 import './App.css';
 import {Link, Route, Routes, BrowserRouter } from 'react-router-dom';
+import c from './crescent.jpeg';
 
 function GroupPic() {
   return (
     <>
-      <img className="main-pic" src="./sources/group.png" />
-      <img className='main-pic' src="./sources/group_black.png" />
-      <img className='main-pic' src="./sources/group2.png" />
-      <img className='main-pic' src="./sources/진동.png" />
+      <img className="main-pic" src={require("./sources/group.png")} />
+      <img className='main-pic' src={require("./sources/group_black.png")} />
+      <img className='main-pic' src={require("./sources/group2.png")} />
+      <img className='main-pic' src={require("./sources/진동.png")} />
     </>
   );
 }
@@ -31,21 +32,6 @@ function Main() {
 
 function App() {
   let comp = window.location.pathname;
-
-  switch(window.location.pathname) {
-    case "":
-      comp = <Main />
-      break
-    case "/ERCF":
-      comp = <Main />
-      break
-    case "/ERCF/About":
-        comp = <About />
-        break
-    case "ERCF/Artists":
-          comp = <About />
-          break    
-  }
 
   return (
     <>

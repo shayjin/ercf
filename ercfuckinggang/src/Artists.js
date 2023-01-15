@@ -60,15 +60,10 @@ export const Artists = () => {
     for (var i = 0; i < artists.length; i++) {
         var artist = artists[i];
 
-        if (artist.name === "마인크래프트고수") {
-            artist.picture = "./sources/minecraft_boi.png";
-        } else {
-            artist.picture = "./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png";
-        }
-
+        artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
         li.push(
             <li>
-                <Link className="viewProj" to="/artist" state={{component: artist}}>
+                <Link className="viewProj" to="/Artist" state={{component: artist}}>
                     <button id="myBtn">
                         <img src={artist.picture}/>
                         <p>{artist.name}</p>

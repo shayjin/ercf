@@ -181,7 +181,7 @@ export const Album = () => {
         }
     }
 
-    var img = "./sources/" + album.name.replace(" ", "_") + ".png";
+    var img = require("./sources/" + album.name.replace(" ", "_").toLowerCase() + ".png");
 
     var a = album.artist.split(", ");
     var artistArray = [];
@@ -215,7 +215,7 @@ export const Album = () => {
 
                 <div className="album" >
                     <img src={img}/>
-                    <p><b>[{album.type}] {album.name} - {artistArray}</b></p>
+                    <p><b>[{album.type}] {album.name} - {artistArray} ({album.date})</b></p>
                     <p>Cover Design: {album.cover}</p>
                     <table>
                         <tr>

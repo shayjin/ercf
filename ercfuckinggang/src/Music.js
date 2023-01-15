@@ -184,11 +184,11 @@ export const Music = () => {
     for (var i = 0; i < albums.length; i++) {
         var album = albums[i];
 
-        album.picture = "./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png";
+        album.picture = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
         
         li.push(
             <li>
-                <Link className="viewProj" to="/album" state={{component: album}}>
+                <Link className="viewProj" to="/Album" state={{component: album}}>
                     <button id="myBtn">
                         <img src={album.picture}/> 
                         <b><p>{album.name}</p></b>

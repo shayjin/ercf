@@ -5,7 +5,7 @@ export const NavBar = () => {
     
     return (
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link class="navbar-brand" to="/ERCF"><img className="main-logo" src="./sources/ercf.png"></img></Link>
+        <Link class="navbar-brand" to="/ERCF"><img className="main-logo" src={require("./sources/ercf.png")}></img></Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

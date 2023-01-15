@@ -6,7 +6,7 @@ export const Contact = () => {
     return (
         <>
             <NavBar />
-            <div className="body" >
+            <div className="contact" >
                 <p><b>Email: </b>daefrican@gmail.com</p>
             </div>
         </>

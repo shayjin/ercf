@@ -7,7 +7,7 @@ export const Artist = () => {
 
     const location = useLocation()
     const artist = location.state.component;
-
+    console.log(artist);
     var li = [];
 
     var albums = [
@@ -197,7 +197,7 @@ export const Artist = () => {
             }
         }
 
-        var img = "./sources/" + album.replaceAll(" ", "_") + ".png";
+        var img = require("./sources/" + album.replaceAll(" ", "_").toLowerCase() + ".png");
 
         li.push(
             <Link className="viewProj" to="/Album" state={{component: albums[index]}}>
@@ -206,11 +206,8 @@ export const Artist = () => {
         );
     }
 
-    if (artist.name === "마인크래프트고수") {
-        artist.picture = "./sources/minecraft_boi.png";
-    } else {
-        artist.picture = "./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png";
-    }
+    artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
+    
     
     return (
         <>

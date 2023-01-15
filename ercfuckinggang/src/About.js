@@ -7,7 +7,7 @@ export const About = () => {
         <>
             <NavBar />
             <div className="body2" >
-                <img className="main-pic" src="./sources/ercf_bg.png" />
+                <img className="main-pic" src={require("./sources/ercf_bg.png")} />
                 <h3>ERCF</h3>
                 <p>2013년 10월 5일에 설립된 대한민국의 힙합 크루이다.</p>
                 <ul className="links">
