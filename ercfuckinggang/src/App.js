@@ -43,6 +43,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="" element={<Main />} />
+          <Route path="/ERCF" element={<Main />} />
           <Route path="*" element={<p>Path not resolved</p>} />
           <Route path="/Artists" element={<Artists />} />
           <Route path="/Artist" element={<Artist />} />
