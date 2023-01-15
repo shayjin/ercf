@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ERCF/static/css/main.a3be8846.css",
+    "main.js": "/ERCF/static/js/main.15bc55ea.js",
+    "static/js/787.c3df38c4.chunk.js": "/ERCF/static/js/787.c3df38c4.chunk.js",
+    "static/media/logo.svg": "/ERCF/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ERCF/index.html",
+    "main.a3be8846.css.map": "/ERCF/static/css/main.a3be8846.css.map",
+    "main.15bc55ea.js.map": "/ERCF/static/js/main.15bc55ea.js.map",
+    "787.c3df38c4.chunk.js.map": "/ERCF/static/js/787.c3df38c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3be8846.css",
+    "static/js/main.15bc55ea.js"
+  ]
+}
