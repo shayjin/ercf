@@ -7,7 +7,7 @@ export const Contact = () => {
         <>
             <NavBar />
             <div className="contact" >
-                <p><b>Email: </b>daefrican@gmail.com</p>
+                <p><b>Email: </b>ercfgang@gmail.com</p>
             </div>
         </>
 

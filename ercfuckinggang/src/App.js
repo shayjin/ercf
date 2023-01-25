@@ -11,12 +11,25 @@ import {Link, Route, Routes, BrowserRouter } from 'react-router-dom';
 import c from './crescent.jpeg';
 
 function GroupPic() {
+
+  var support = [];
+  var supportPic = [
+    "rokmc", "army", "airforce", "samsung", "39", "expedia", "징기스", 
+    "shinhan", "한가람","comsem", "osu", "kmu",  "dcu", "ytu", "dsu",  
+    "영공", "경북", "oohs", "황금", "덕화", '수성', '교회', "마차이", "테트리스"
+  ];
+
+  for (var i = 0; i < supportPic.length; i++) {
+    var pic = require("./sources/support/" + supportPic[i] + ".png");
+    support.push(<img src={pic} />)
+  }
+
   return (
     <>
       <img className="main-pic" src={require("./sources/group.png")} />
-      <img className='main-pic' src={require("./sources/group_black.png")} />
-      <img className='main-pic' src={require("./sources/group2.png")} />
-      <img className='main-pic' src={require("./sources/진동.png")} />
+      <div className='support' >
+        {support}
+      </div>
     </>
   );
 }
