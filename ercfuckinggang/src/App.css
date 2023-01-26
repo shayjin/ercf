@@ -190,9 +190,31 @@ a {
 
 @media screen and (max-width: 625px) {
   .body2 img {
-    width: 96vw;
-    height: 96vw;
+    width: 98vw;
+    height: 55vw;
   }
+
+  .links {
+    width: 100vw !important;
+  }
+
+}
+
+.namu {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 800px;
+  height: auto;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .namu {
+    width: 100vw;
+    height: auto;
+  }
+
 }
 
 .links {
@@ -220,7 +242,7 @@ a {
 
 
 .support {
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 50px;
   width: 700px;
   margin-left: auto;
@@ -232,4 +254,16 @@ a {
   padding: 3px;
   width: 80px;
   height: 80px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .support {
+    width: 100vw;
+  }
+
+  .support img {
+    width: 70px;
+    height: 70px;
+  }
 }

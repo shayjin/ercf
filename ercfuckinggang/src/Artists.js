@@ -52,6 +52,12 @@ export const Artists = () => {
             music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
             since: "2023.01.03",
             position: "프로듀서"
+        },
+        {
+            name: "Juts5Bell",
+            music: [],
+            since: "2023.01.26",
+            position: "프로듀서"
         }
     ];
 

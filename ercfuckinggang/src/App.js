@@ -27,7 +27,8 @@ function GroupPic() {
   return (
     <>
       <img className="main-pic" src={require("./sources/group.png")} />
-      <div className='support' >
+      <img className="namu" src={require("./sources/namu.png")} />
+      <div className='support'>
         {support}
       </div>
     </>
