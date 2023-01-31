@@ -7,8 +7,8 @@ export const Music = () => {
     var albums = [
         {
             name: "진동",
-            artist: "Shay Jin, Billy Boi",
-            date: "2023.01.??",
+            artist: "Shay Jin & Billy Boi",
+            date: "2023.02.??",
             type: "Mixtape",
             cover: "Billy Boi",
             mm: "마인크래프트고수",
@@ -60,7 +60,7 @@ export const Music = () => {
         },
         {
             name: "진서",
-            artist: "Shay Jin, MST",
+            artist: "Shay Ji & MST",
             date: "2021.08.16",
             type: "Mixtape",
             cover: "마인크래프트고수",
@@ -98,7 +98,7 @@ export const Music = () => {
         },
         {
             name: "KIK",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2021.02.26",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -122,7 +122,7 @@ export const Music = () => {
         },
         {
             name: "POM",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2020.06.17",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -140,7 +140,7 @@ export const Music = () => {
         },
         {
             name: "GANG",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2020.05.06",
             type: "Mixtape",
             cover: "Billy Boi",

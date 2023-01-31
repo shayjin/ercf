@@ -13,7 +13,7 @@ export const Artist = () => {
     var albums = [
         {
             name: "진동",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2023.02.??",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -66,7 +66,7 @@ export const Artist = () => {
         },
         {
             name: "진서",
-            artist: "Shay Jin, MST",
+            artist: "Shay Jin & MST",
             date: "2021.08.16",
             type: "Mixtape",
             cover: "마인크래프트고수",
@@ -104,7 +104,7 @@ export const Artist = () => {
         },
         {
             name: "KIK",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Ji & Billy Boi",
             date: "2021.02.26",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -128,7 +128,7 @@ export const Artist = () => {
         },
         {
             name: "POM",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2020.06.17",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -146,7 +146,7 @@ export const Artist = () => {
         },
         {
             name: "GANG",
-            artist: "Shay Jin, Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2020.05.06",
             type: "Mixtape",
             cover: "Billy Boi",
@@ -206,7 +206,7 @@ export const Artist = () => {
         );
     }
 
-    
+
 
     artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
     
