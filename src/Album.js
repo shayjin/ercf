@@ -13,7 +13,7 @@ export const Album = () => {
         },
         {
             name: "Billy Boi",
-            music: ["진동", "진서", "KIK", "POM", "GANG"],
+            music: ["진동", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -110,6 +110,15 @@ export const Album = () => {
     const album = location.state.component;
     var li = [];
     var index;
+    var coverInd;
+
+    for (var a = 0; artists.length; a++) {
+        if (artists[a].name === album.cover) {
+            coverInd = a;
+            break;
+        }
+
+    }
     const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "Howard Kim"];
     
     for (var i = 0; i < album.songs.length; i++) {
@@ -126,6 +135,7 @@ export const Album = () => {
                             index = a;
                             break;
                         }
+
                     }
 
                     if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to="/artist" state={{component: artists[index]}}>{producer}</Link>);
@@ -171,10 +181,12 @@ export const Album = () => {
                 }
             }   
 
+            x.push(')');
+
             li.push(
                 <tr>
                     <td>{i+1}</td>
-                    <td>{x})</td>
+                    <td>{x}</td>
                     <td>{xx}</td>
                 </tr>
             );
@@ -207,6 +219,14 @@ export const Album = () => {
             artistArray.push(", ");
         } 
     }
+
+    var cover = [];
+
+    if (ercf.includes(album.cover)) {
+        cover.push(<Link className="viewProj" to="/artist" state={{component: artists[coverInd]}}>{album.cover}</Link>);
+    } else {
+        cover.push(<p>Cover Design: {album.cover}</p>);
+    }
     
     return (
         <>
@@ -216,12 +236,12 @@ export const Album = () => {
                 <div className="album" >
                     <img src={img}/>
                     <p><b>[{album.type}] {album.name} - {artistArray} ({album.date})</b></p>
-                    <p>Cover Design: {album.cover}</p>
+                    <p>Cover Design: {cover}</p>
                     <table>
                         <tr>
                             <th>#</th>
                             <th>제목</th>
-                            <th>작/편곡</th>
+                            <th>작곡/편곡</th>
                         </tr>
                         {li}
                     </table>
