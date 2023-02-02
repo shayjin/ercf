@@ -58,6 +58,12 @@ export const Artists = () => {
             music: [],
             since: "2023.01.26",
             position: "프로듀서"
+        },
+        {
+            name: "언어장애",
+            music: [],
+            since: "2023.02.02",
+            position: "래퍼"
         }
     ];
 

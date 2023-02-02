@@ -52,59 +52,21 @@ export const Album = () => {
             music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
             since: "2023.01.03",
             position: "프로듀서"
-        }
+        },
+        {
+            name: "Juts5Bell",
+            music: [],
+            since: "2023.01.26",
+            position: "프로듀서"
+        },
+        {
+            name: "언어장애",
+            music: [],
+            since: "2023.02.02",
+            position: "래퍼"
+        },
     ];
 
-    var artists = [
-        {
-            name: "마인크래프트고수",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.05",
-            position: "리더, 프로듀서"
-        },
-        {
-            name: "Billy Boi",
-            music: ["진동", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.16",
-            position: "래퍼, 디자이너"
-        },
-        {
-            name: "Ballboy Da Mogi Killer",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM"],
-            since: "2014.01.19",
-            position: "래퍼, 스키터"
-        },
-        {
-            name: "Mogi",
-            music: ["진동", "KIK", "POM", "GANG"],
-            since: "2014.02.07",
-            position: "래퍼"
-        },
-        {
-            name: "Shay Jin",
-            music: ["진동", "볼보이_파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2019.05.01",
-            position: "래퍼"
-        },
-        {
-            name: "MST",
-            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
-            since: "2021.08.16",
-            position: "래퍼"
-        },
-        {
-            name: "UnteIl",
-            music: ["진서", "KIK"],
-            since: "2022.06.22",
-            position: "래퍼"
-        },
-        {
-            name: "Howard Kim",
-            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
-            since: "2023.01.03",
-            position: "프로듀서"
-        }
-    ];
 
     const location = useLocation()
     const album = location.state.component;
