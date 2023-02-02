@@ -13,7 +13,7 @@ export const Artists = () => {
         },
         {
             name: "Billy Boi",
-            music: ["진동", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["08_베이식_Remix_Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -61,7 +61,7 @@ export const Artists = () => {
         },
         {
             name: "언어장애",
-            music: [],
+            music: ["08 베이식 Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
         }

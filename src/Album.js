@@ -13,7 +13,7 @@ export const Album = () => {
         },
         {
             name: "Billy Boi",
-            music: ["진동", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["08 베이식 Remix Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -31,7 +31,7 @@ export const Album = () => {
         },
         {
             name: "Shay Jin",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "볼보이_파워", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2019.05.01",
             position: "래퍼"
         },
@@ -61,10 +61,10 @@ export const Album = () => {
         },
         {
             name: "언어장애",
-            music: [],
+            music: ["08 베이식 Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
-        },
+        }
     ];
 
 
@@ -79,9 +79,8 @@ export const Album = () => {
             coverInd = a;
             break;
         }
-
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "Howard Kim"];
+    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "Howard Kim", "언어장애"];
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {
@@ -155,7 +154,7 @@ export const Album = () => {
         }
     }
 
-    var img = require("./sources/" + album.name.replace(" ", "_").toLowerCase() + ".png");
+    var img = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
 
     var a = album.artist.split(", ");
     var artistArray = [];

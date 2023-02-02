@@ -17,6 +17,20 @@ export const Music = () => {
             ]
         },
         {
+            name: "08 베이식 Remix Remix",
+            artist: "언어장애",
+            date: "2023.02.02",
+            type: "싱글",
+            cover: "Billy Boi",
+            mm: "Juts5Bell",
+            songs: [
+                {
+                    name: "08 베이식 Remix Remix",
+                    producer: ["TOIL"]
+                }
+            ]
+        },
+        {
             name: "Cresent",
             artist: "MST",
             date: "2022.04.08",
@@ -185,7 +199,7 @@ export const Music = () => {
         var album = albums[i];
 
         album.picture = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
-        
+        console.log(album.picture);
         li.push(
             <li>
                 <Link className="viewProj" to="/Album" state={{component: album}}>

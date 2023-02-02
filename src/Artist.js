@@ -23,6 +23,20 @@ export const Artist = () => {
             ]
         },
         {
+            name: "08 베이식 Remix Remix",
+            artist: "언어장애",
+            date: "2023.02.02",
+            type: "싱글",
+            cover: "Billy Boi",
+            mm: "Juts5Bell",
+            songs: [
+                {
+                    name: "08 베이식 Remix Remix",
+                    producer: ["TOIL"]
+                }
+            ]
+        },
+        {
             name: "Cresent",
             artist: "MST",
             date: "2022.04.08",
@@ -66,7 +80,7 @@ export const Artist = () => {
         },
         {
             name: "진서",
-            artist: "Shay Jin & MST",
+            artist: "Shay Ji & MST",
             date: "2021.08.16",
             type: "Mixtape",
             cover: "마인크래프트고수",
@@ -90,21 +104,21 @@ export const Artist = () => {
             cover: "마인크래프트고수",
             mm: "마인크래프트고수",
             songs: [
-                { name: "No Cap", producer: ["Ballboy Da Mogi Killer"], feature: ["이수민"]},
-                { name: "Don't Cross the Line", producer: ["Ballboy Da Mogi Killer"], feature: ["BJH Brother"] },
-                { name: "Mogi Killer...", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "비둘기 Killer...", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "이원문ㅗ", producer: ["Ballboy Da Mogi Killer"], feature: ["BIG Naugty"] },
-                { name: "잼민쓰", producer: ["Ballboy Da Mogi Killer"], feature: ["곽시후"] },
-                { name: "내 친구 모기", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "도림사 & 까마귀", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "모기에게... pt. 2 (Skit)", producer: ["마인크래프트고수"] },
-                { name: "빼재순", producer: ["Ballboy Da Mogi Killer"], feature: ["Shay Jin"] }
+                { name: "No Cap", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["이수민"]},
+                { name: "Don't Cross the Line", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["BJH Brother"] },
+                { name: "Mogi Killer...", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
+                { name: "비둘기 Killer...", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
+                { name: "이원문ㅗ", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["BIG Naugty"] },
+                { name: "잼민쓰", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["곽시후"] },
+                { name: "내 친구 모기", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
+                { name: "도림사 & 까마귀", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
+                { name: "모기에게... pt. 2 (Skit)", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
+                { name: "빼재순", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["Shay Jin"] }
             ]
         },
         {
             name: "KIK",
-            artist: "Shay Ji & Billy Boi",
+            artist: "Shay Jin & Billy Boi",
             date: "2021.02.26",
             type: "Mixtape",
             cover: "Billy Boi",
