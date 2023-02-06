@@ -13,7 +13,7 @@ export const Album = () => {
         },
         {
             name: "Billy Boi",
-            music: ["08 베이식 Remix Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["08Basick Remix Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -48,7 +48,7 @@ export const Album = () => {
             position: "래퍼"
         },
         {
-            name: "Howard Kim",
+            name: "FluorMeme",
             music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
             since: "2023.01.03",
             position: "프로듀서"
@@ -61,7 +61,7 @@ export const Album = () => {
         },
         {
             name: "언어장애",
-            music: ["08 베이식 Remix Remix"],
+            music: ["08Basick Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
         }
@@ -80,7 +80,7 @@ export const Album = () => {
             break;
         }
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "Howard Kim", "언어장애"];
+    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "언어장애"];
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {
@@ -156,7 +156,7 @@ export const Album = () => {
 
     var img = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
 
-    var a = album.artist.split(", ");
+    var a = album.artist.split(" & ");
     var artistArray = [];
 
     for (var b = 0; b < a.length; b++) {
@@ -177,7 +177,7 @@ export const Album = () => {
         }
 
         if (b + 1 < a.length) {
-            artistArray.push(", ");
+            artistArray.push(" & ");
         } 
     }
 

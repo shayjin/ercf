@@ -17,7 +17,7 @@ export const Music = () => {
             ]
         },
         {
-            name: "08 베이식 Remix Remix",
+            name: "08Basick Remix Remix",
             artist: "언어장애",
             date: "2023.02.02",
             type: "싱글",
@@ -25,7 +25,7 @@ export const Music = () => {
             mm: "Juts5Bell",
             songs: [
                 {
-                    name: "08 베이식 Remix Remix",
+                    name: "08Basick Remix Remix",
                     producer: ["TOIL"]
                 }
             ]
@@ -35,12 +35,12 @@ export const Music = () => {
             artist: "MST",
             date: "2022.04.08",
             type: "싱글",
-            cover: "Howard Kim",
-            mm: "Howard Kim",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
             songs: [
                 {
                     name: "Cresent",
-                    producer: ["Howard Kim"]
+                    producer: ["FluorMeme"]
                 }
             ]
         },
@@ -49,12 +49,12 @@ export const Music = () => {
             artist: "MST",
             date: "2022.03.31",
             type: "싱글",
-            cover: "Howard Kim",
-            mm: "Howard Kim",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
             songs: [
                 {
                     name: "어쩔티비",
-                    producer: ["Howard Kim"]
+                    producer: ["FluorMeme"]
                 }
             ]
         },
@@ -63,18 +63,18 @@ export const Music = () => {
             artist: "MST",
             date: "2022.01.28",
             type: "싱글",
-            cover: "Howard Kim",
-            mm: "Howard Kim",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
             songs: [
                 {
                     name: "LaTale",
-                    producer: ["Howard Kim"]
+                    producer: ["FluorMeme"]
                 }
             ]
         },
         {
             name: "진서",
-            artist: "Shay Ji & MST",
+            artist: "Shay Jin & MST",
             date: "2021.08.16",
             type: "Mixtape",
             cover: "마인크래프트고수",
@@ -98,16 +98,16 @@ export const Music = () => {
             cover: "마인크래프트고수",
             mm: "마인크래프트고수",
             songs: [
-                { name: "No Cap", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["이수민"]},
-                { name: "Don't Cross the Line", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["BJH Brother"] },
-                { name: "Mogi Killer...", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
-                { name: "비둘기 Killer...", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
-                { name: "이원문ㅗ", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["BIG Naugty"] },
-                { name: "잼민쓰", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["곽시후"] },
-                { name: "내 친구 모기", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
-                { name: "도림사 & 까마귀", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
-                { name: "모기에게... pt. 2 (Skit)", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"] },
-                { name: "빼재순", producer: ["Ballboy Da Mogi Killer", "마인크래프트고수"], feature: ["Shay Jin"] }
+                { name: "No Cap", producer: ["Ballboy Da Mogi Killer"], feature: ["이수민"]},
+                { name: "Don't Cross the Line", producer: ["Ballboy Da Mogi Killer"], feature: ["BJH Brother"] },
+                { name: "Mogi Killer...", producer: ["Ballboy Da Mogi Killer"] },
+                { name: "비둘기 Killer...", producer: ["Ballboy Da Mogi Killer"] },
+                { name: "이원문ㅗ", producer: ["Ballboy Da Mogi Killer"], feature: ["BIG Naugty"] },
+                { name: "잼민쓰", producer: ["Ballboy Da Mogi Killer"], feature: ["곽시후"] },
+                { name: "내 친구 모기", producer: ["Ballboy Da Mogi Killer"] },
+                { name: "도림사 & 까마귀", producer: ["Ballboy Da Mogi Killer"] },
+                { name: "모기에게... pt. 2 (Skit)", producer: ["마인크래프트고수"] },
+                { name: "빼재순", producer: ["Ballboy Da Mogi Killer"], feature: ["Shay Jin"] }
             ]
         },
         {
@@ -131,7 +131,7 @@ export const Music = () => {
                 { name: "Unknown E.R. Gamer", producer: ["마인크래프트고수"], feature: ["shinji", "Fi$h"] },
                 { name: "김재환 타법 (Skit)", producer: ["마인크래프트고수"] },
                 { name: "BGH Father Remix", producer: ["마인크래프트고수"], feature: ["Fi$h", "MST", "Lil Arj", "Ballboy Da Mogi Killer"] },
-                { name: "Outro", producer: ["Howard Kim"] }
+                { name: "Outro", producer: ["FluorMeme"] }
             ]
         },
         {
@@ -162,7 +162,7 @@ export const Music = () => {
             songs: [
                 { name: "디디오엔지", producer: ["마인크래프트고수"] },
                 { name: "BGH Father", producer: ["마인크래프트고수"], feature: ["Fi$h"] },
-                { name: "Sip", producer: ["Howard Kim"], feature: ["Big anDre's Bo$$"] },
+                { name: "Sip", producer: ["FluorMeme"], feature: ["Big anDre's Bo$$"] },
                 { name: "20.5학번 Freestyle", producer: ["마인크래프트고수"] },
                 { name: "rod", producer: ["마인크래프트고수"], feature: ["Mogi"] },
                 { name: "돼지흥분제", producer: ["마인크래프트고수"] },
