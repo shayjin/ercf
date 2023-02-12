@@ -13,7 +13,7 @@ export const Album = () => {
         },
         {
             name: "Billy Boi",
-            music: ["08Basick Remix Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -80,7 +80,7 @@ export const Album = () => {
             break;
         }
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "언어장애"];
+    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "Juts5Bell", "언어장애"];
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {

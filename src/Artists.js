@@ -13,7 +13,7 @@ export const Artists = () => {
         },
         {
             name: "Billy Boi",
-            music: ["08Basick_Remix_Remix", "진동", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "08Basick_Remix_Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },

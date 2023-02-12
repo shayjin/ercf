@@ -14,12 +14,19 @@ export const Artist = () => {
         {
             name: "진동",
             artist: "Shay Jin & Billy Boi",
-            date: "2023.02.??",
+            date: "2023.02.08",
             type: "Mixtape",
             cover: "Billy Boi",
             mm: "마인크래프트고수",
             songs: [
-
+                { name: "딸기 (Skit)", producer: ["Juts5Bell"] },
+                { name: "Trap!", producer: ["마인크래프트고수"], feature: ["Big anDre's Bo$$"] },
+                { name: "BGH Fackthur Danger!", producer: ["마인크래프트고수"] },
+                { name: "금오헬창", producer: ["마인크래프트고수"]},
+                { name: "Hook Tuck!", producer: ["마인크래프트고수"], feature: ["신선우"] },
+                { name: "Money Dance", producer: ["마인크래프트고수"], feature: ["KE$h B"] },
+                { name: "도건인생백도", producer: ["마인크래프트고수"], feature: ["MST", "Ballboy Da Mogi Killer"] },
+                { name: "A Long Sale", producer: ["마인크래프트고수"], feature: ["이예슬", "Mogi"] }
             ]
         },
         {
@@ -80,7 +87,7 @@ export const Artist = () => {
         },
         {
             name: "진서",
-            artist: "Shay Ji & MST",
+            artist: "Shay Jin & MST",
             date: "2021.08.16",
             type: "Mixtape",
             cover: "마인크래프트고수",
