@@ -31,7 +31,7 @@ export const Album = () => {
         },
         {
             name: "Shay Jin",
-            music: ["진동", "볼보이_파워", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2019.05.01",
             position: "래퍼"
         },
