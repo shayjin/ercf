@@ -30,13 +30,24 @@ grid-gap: 0px;
 padding: 20;
 margin-left: 0px;
 margin-right: 0px;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 list-style: none;
 }
 
+.body2 ul  {
+
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
+}
 .artistUl {
+  margin-left: -25px;
   margin-top: 30px;
-  margin-left: -21px;
 }
 
 .artistUl p {
@@ -51,8 +62,9 @@ list-style: none;
 }
 
 img {
-  width: 270px;
-  height:270px;
+  
+  width: 220px;
+  height:220px;
   border-radius: 5px;
 }
 

@@ -177,6 +177,49 @@ export const Music = () => {
             ]
         },
         {
+            name: "Addicted",
+            artist: "MST",
+            date: "2020.04.12",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Addicted",
+                    producer: ["FluorMeme"],
+                    feature: ["Lewis"]
+                }
+            ]
+        },
+        {
+            name: "Void",
+            artist: "MST",
+            date: "2020.04.12",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Void",
+                    producer: ["FluorMeme"]
+                }
+            ]
+        },
+        {
+            name: "Eyes",
+            artist: "MST",
+            date: "2020.04.07",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Eyes",
+                    producer: ["FluorMeme"]
+                }
+            ]
+        },
+        {
             name: "JUCK",
             artist: "Shay Jin",
             date: "2019.12.13",
@@ -209,7 +252,7 @@ export const Music = () => {
         console.log(album.picture);
         li.push(
             <li>
-                <Link className="viewProj" to="/Album" state={{component: album}}>
+                <Link className="viewProj" to="/ERCF/Album" state={{component: album}}>
                     <button id="myBtn">
                         <img src={album.picture}/> 
                         <b><p>{album.name}</p></b>

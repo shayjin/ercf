@@ -13,7 +13,7 @@ export const Artists = () => {
         },
         {
             name: "Billy Boi",
-            music: ["진동", "08Basick_Remix_Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2013.10.16",
             position: "래퍼, 디자이너"
         },
@@ -31,13 +31,13 @@ export const Artists = () => {
         },
         {
             name: "Shay Jin",
-            music: ["진동", "볼보이_파워", "진서", "KIK", "POM", "GANG", "JUCK"],
+            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
             since: "2019.05.01",
             position: "래퍼"
         },
         {
             name: "MST",
-            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
+            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK", "Addicted", "Void", "Eyes"],
             since: "2021.08.16",
             position: "래퍼"
         },
@@ -49,7 +49,7 @@ export const Artists = () => {
         },
         {
             name: "FluorMeme",
-            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
+            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG", "Addicted", "Void", "Eyes"],
             since: "2023.01.03",
             position: "프로듀서"
         },
@@ -75,7 +75,7 @@ export const Artists = () => {
         artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
         li.push(
             <li>
-                <Link className="viewProj" to="/Artist" state={{component: artist}}>
+                <Link className="viewProj" to="/ERCF/Artist" state={{component: artist}}>
                     <button id="myBtn">
                         <img src={artist.picture}/>
                         <p>{artist.name}</p>

@@ -37,7 +37,7 @@ export const Album = () => {
         },
         {
             name: "MST",
-            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
+            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK", "Addicted", "Void", "Eyes"],
             since: "2021.08.16",
             position: "래퍼"
         },
@@ -49,7 +49,7 @@ export const Album = () => {
         },
         {
             name: "FluorMeme",
-            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
+            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG", "Addicted", "Void", "Eyes"],
             since: "2023.01.03",
             position: "프로듀서"
         },
@@ -99,8 +99,8 @@ export const Album = () => {
 
                     }
 
-                    if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to="/artist" state={{component: artists[index]}}>{producer}</Link>);
-                    else xx.push(<Link className="viewProj" to="/artist" state={{component: artists[index]}}>{producer}, </Link>);
+                    if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{producer}</Link>);
+                    else xx.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{producer}, </Link>);
                 } else {
                     xx.push(album.songs[i].producer);
                 }
@@ -134,8 +134,8 @@ export const Album = () => {
                         }
                     }
 
-                    if (j + 1 === album.songs[i].feature.length) x.push(<Link className="viewProj" to="/artist" state={{component: artists[index]}}>{feature}</Link>);
-                    else x.push(<Link className="viewProj" to="/artist" state={{component: artists[index]}}>{feature}, </Link>);
+                    if (j + 1 === album.songs[i].feature.length) x.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{feature}</Link>);
+                    else x.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{feature}, </Link>);
                 } else {
                     if (j + 1 === album.songs[i].feature.length) x.push(album.songs[i].feature[j]);
                     else x.push(album.songs[i].feature[j] + ", ");
@@ -171,7 +171,7 @@ export const Album = () => {
         }
 
         if (ind !== -1) {
-            artistArray.push(<Link className="viewProj" to="/artist" state={{component: artists[ind]}}>{artist}</Link>);
+            artistArray.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[ind]}}>{artist}</Link>);
         } else {
             artistArray.push("hi");
         }
@@ -184,7 +184,7 @@ export const Album = () => {
     var cover = [];
 
     if (ercf.includes(album.cover)) {
-        cover.push(<Link className="viewProj" to="/artist" state={{component: artists[coverInd]}}>{album.cover}</Link>);
+        cover.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[coverInd]}}>{album.cover}</Link>);
     } else {
         cover.push(<p>Cover Design: {album.cover}</p>);
     }

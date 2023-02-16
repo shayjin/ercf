@@ -54,12 +54,12 @@ function App() {
           <Route path="" element={<Main />} />
           <Route path="/ERCF" element={<Main />} />
           <Route path="*" element={<p>Path not resolved</p>} />
-          <Route path="/Artists" element={<Artists />} />
-          <Route path="/Artist" element={<Artist />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Music" element={<Music />} />
-          <Route path="/Album" element={<Album />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/ERCF/Artists" element={<Artists />} />
+          <Route path="/ERCF/Artist" element={<Artist />} />
+          <Route path="/ERCF/Contact" element={<Contact />} />
+          <Route path="/ERCF/Music" element={<Music />} />
+          <Route path="/ERCF/Album" element={<Album />} />
+          <Route path="/ERCF/About" element={<About />} />
         </Routes>
       </BrowserRouter>
 

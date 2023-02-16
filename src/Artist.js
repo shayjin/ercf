@@ -183,6 +183,49 @@ export const Artist = () => {
             ]
         },
         {
+            name: "Addicted",
+            artist: "MST",
+            date: "2020.04.12",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Addicted",
+                    producer: ["FluorMeme"],
+                    feature: ["Lewis"]
+                }
+            ]
+        },
+        {
+            name: "Void",
+            artist: "MST",
+            date: "2020.04.12",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Void",
+                    producer: ["FluorMeme"]
+                }
+            ]
+        },
+        {
+            name: "Eyes",
+            artist: "MST",
+            date: "2020.04.07",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "Eyes",
+                    producer: ["FluorMeme"]
+                }
+            ]
+        },
+        {
             name: "JUCK",
             artist: "Shay Jin",
             date: "2019.12.13",
@@ -221,7 +264,7 @@ export const Artist = () => {
         var img = require("./sources/" + album.replaceAll(" ", "_").toLowerCase() + ".png");
 
         li.push(
-            <Link className="viewProj" to="/Album" state={{component: albums[index]}}>
+            <Link className="viewProj" to="/ERCF/Album" state={{component: albums[index]}}>
               <img src={img}/>
             </Link>
         );
