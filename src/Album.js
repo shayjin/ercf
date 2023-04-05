@@ -64,6 +64,12 @@ export const Album = () => {
             music: ["08Basick Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
+        },
+        {
+            name: "BIG Naugty",
+            music: ["볼보이 파워", "KIK", "POM"],
+            since: "2023.04.04",
+            position: "래퍼"
         }
     ];
 
@@ -80,7 +86,7 @@ export const Album = () => {
             break;
         }
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "Juts5Bell", "언어장애"];
+    const ercf = ["마인크래프트고수", "Billy Boi", "Ballboy Da Mogi Killer", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "Juts5Bell", "언어장애", "BIG Naugty"];
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {

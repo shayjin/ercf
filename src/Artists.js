@@ -64,6 +64,12 @@ export const Artists = () => {
             music: ["08Basick Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
+        },
+        {
+            name: "BIG Naugty",
+            music: ["볼보이 파워", "KIK", "POM"],
+            since: "2023.04.04",
+            position: "래퍼"
         }
     ];
 
