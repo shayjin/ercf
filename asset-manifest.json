@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5b62598c.css",
-    "main.js": "/static/js/main.1e320516.js",
+    "main.js": "/static/js/main.78f12526.js",
     "static/js/787.c3df38c4.chunk.js": "/static/js/787.c3df38c4.chunk.js",
     "static/media/group.png": "/static/media/group.f5bb537829b0ea4959b2.png",
     "static/media/진동.png": "/static/media/진동.41ac6e9db13e11d6af5b.png",
@@ -17,6 +17,7 @@
     "static/media/juts5bell.png": "/static/media/juts5bell.b263c579a8420c79793d.png",
     "static/media/latale.png": "/static/media/latale.7b9e0227ce650d662647.png",
     "static/media/group_black.png": "/static/media/group_black.1a16c62a771b27f594d1.png",
+    "static/media/ke$h_b.png": "/static/media/ke$h_b.c4e6aa031955cf97774d.png",
     "static/media/진서.png": "/static/media/진서.88cbc383ff3275a4d665.png",
     "static/media/마인크래프트고수.png": "/static/media/마인크래프트고수.ed4ec04748ca7073fe43.png",
     "static/media/fluormeme.png": "/static/media/fluormeme.77cdd22bd5743dad0e71.png",
@@ -29,7 +30,7 @@
     "static/media/addicted.png": "/static/media/addicted.1719334ea81fac8bee4c.png",
     "static/media/볼보이_파워.png": "/static/media/볼보이_파워.c3da4ba696ba4b69ec09.png",
     "static/media/unteil.png": "/static/media/unteil.5c4372bf111e91d4f89d.png",
-    "static/media/언어장애.png": "/static/media/언어장애.36c95d95ad0772fc3e08.png",
+    "static/media/unujangay.png": "/static/media/unujangay.36c95d95ad0772fc3e08.png",
     "static/media/08basick_remix_remix.png": "/static/media/08basick_remix_remix.9a7084fbbe24a8619734.png",
     "static/media/mst.png": "/static/media/mst.4ea39e886fe0e496f61b.png",
     "static/media/namu.png": "/static/media/namu.05e178dc272edfbb28f6.png",
@@ -45,11 +46,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.5b62598c.css.map": "/static/css/main.5b62598c.css.map",
-    "main.1e320516.js.map": "/static/js/main.1e320516.js.map",
+    "main.78f12526.js.map": "/static/js/main.78f12526.js.map",
     "787.c3df38c4.chunk.js.map": "/static/js/787.c3df38c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b62598c.css",
-    "static/js/main.1e320516.js"
+    "static/js/main.78f12526.js"
   ]
 }
