@@ -18,7 +18,7 @@ export const Artists = () => {
             position: "래퍼, 디자이너"
         },
         {
-            name: "Ballboy Da Mogi Killer",
+            name: "sagikun",
             music: ["진동", "볼보이 파워", "진서", "KIK", "POM"],
             since: "2014.01.19",
             position: "래퍼, 스키터"
@@ -37,7 +37,7 @@ export const Artists = () => {
         },
         {
             name: "MST",
-            music: ["Cresent", "어쩔티비", "LaTale", "진서", "KIK", "Addicted", "Void", "Eyes"],
+            music: ["내일이면돼", "진동", "Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
             since: "2021.08.16",
             position: "래퍼"
         },
@@ -48,27 +48,33 @@ export const Artists = () => {
             position: "래퍼"
         },
         {
+            name: "BIG Naugty",
+            music: ["볼보이 파워", "KIK", "POM"],
+            since: "2022.07.01",
+            position: "래퍼"
+        },
+        {
             name: "FluorMeme",
-            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG", "Addicted", "Void", "Eyes"],
+            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
             since: "2023.01.03",
             position: "프로듀서"
         },
         {
             name: "Juts5Bell",
-            music: [],
+            music: ["진동"],
             since: "2023.01.26",
             position: "프로듀서"
         },
         {
-            name: "언어장애",
+            name: "unujangay",
             music: ["08Basick Remix Remix"],
             since: "2023.02.02",
             position: "래퍼"
         },
         {
-            name: "BIG Naugty",
-            music: ["볼보이 파워", "KIK", "POM"],
-            since: "2023.04.04",
+            name: "KE$h B",
+            music: ["진동"],
+            since: "2023.04.11",
             position: "래퍼"
         }
     ];

@@ -12,6 +12,20 @@ export const Artist = () => {
 
     var albums = [
         {
+            name: "내일이면돼",
+            artist: "MST",
+            date: "2023.02.17",
+            type: "싱글",
+            cover: "FluorMeme",
+            mm: "FluorMeme",
+            songs: [
+                {
+                    name: "내일이면돼",
+                    producer: ["FluorMeme"]
+                }
+            ]
+        },
+        {
             name: "진동",
             artist: "Shay Jin & Billy Boi",
             date: "2023.02.08",
@@ -25,13 +39,13 @@ export const Artist = () => {
                 { name: "금오헬창", producer: ["마인크래프트고수"]},
                 { name: "Hook Tuck!", producer: ["마인크래프트고수"], feature: ["신선우"] },
                 { name: "Money Dance", producer: ["마인크래프트고수"], feature: ["KE$h B"] },
-                { name: "도건인생백도", producer: ["마인크래프트고수"], feature: ["MST", "Ballboy Da Mogi Killer"] },
+                { name: "도건인생백도", producer: ["마인크래프트고수"], feature: ["MST", "sagikun"] },
                 { name: "A Long Sale", producer: ["마인크래프트고수"], feature: ["이예슬", "Mogi"] }
             ]
         },
         {
             name: "08Basick Remix Remix",
-            artist: "언어장애",
+            artist: "unujangay",
             date: "2023.02.02",
             type: "싱글",
             cover: "Billy Boi",
@@ -99,28 +113,28 @@ export const Artist = () => {
                 { name: "ruf", producer: ["마인크래프트고수"], feature: ["UnteIl"] },
                 { name: "노인공격", producer: ["마인크래프트고수"], feature: ["Big anDre's Bo$$", "shinji", "Davy Jones"] },
                 { name: "bbbp", producer: ["마인크래프트고수"], feature: ["Billy Boi"] },
-                { name: "딕소스!", producer: ["마인크래프트고수"], feature: ["Ballboy Da Mogi Killer"] },
+                { name: "딕소스!", producer: ["마인크래프트고수"], feature: ["sagikun"] },
                 { name: "신지혜 만날래!", producer: ["마인크래프트고수"], feature: ["김진성", "Fi$h"] }
             ]
         },
         {
             name: "볼보이 파워",
-            artist: "Ballboy Da Mogi Killer",
+            artist: "sagikun",
             date: "2021.07.30",
             type: "Mixtape",
             cover: "마인크래프트고수",
             mm: "마인크래프트고수",
             songs: [
-                { name: "No Cap", producer: ["Ballboy Da Mogi Killer"], feature: ["이수민"]},
-                { name: "Don't Cross the Line", producer: ["Ballboy Da Mogi Killer"], feature: ["BJH Brother"] },
-                { name: "Mogi Killer...", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "비둘기 Killer...", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "이원문ㅗ", producer: ["Ballboy Da Mogi Killer"], feature: ["BIG Naugty"] },
-                { name: "잼민쓰", producer: ["Ballboy Da Mogi Killer"], feature: ["곽시후"] },
-                { name: "내 친구 모기", producer: ["Ballboy Da Mogi Killer"] },
-                { name: "도림사 & 까마귀", producer: ["Ballboy Da Mogi Killer"] },
+                { name: "No Cap", producer: ["sagikun"], feature: ["이수민"]},
+                { name: "Don't Cross the Line", producer: ["sagikun"], feature: ["BJH Brother"] },
+                { name: "Mogi Killer...", producer: ["sagikun"] },
+                { name: "비둘기 Killer...", producer: ["sagikun"] },
+                { name: "이원문ㅗ", producer: ["sagikun"], feature: ["BIG Naugty"] },
+                { name: "잼민쓰", producer: ["sagikun"], feature: ["곽시후"] },
+                { name: "내 친구 모기", producer: ["sagikun"] },
+                { name: "도림사 & 까마귀", producer: ["sagikun"] },
                 { name: "모기에게... pt. 2 (Skit)", producer: ["마인크래프트고수"] },
-                { name: "빼재순", producer: ["Ballboy Da Mogi Killer"], feature: ["Shay Jin"] }
+                { name: "빼재순", producer: ["sagikun"], feature: ["Shay Jin"] }
             ]
         },
         {
@@ -136,14 +150,14 @@ export const Artist = () => {
                 { name: "의리없는 새기들", producer: ["마인크래프트고수"] },
                 { name: "Lim Jaesick, the Truck Racer", producer: ["마인크래프트고수"] },
                 { name: "Lee Yeseul, the Happy Church Minister Clone", producer: ["마인크래프트고수"], feature: ["UnteIl", "Big anDre's Bo$$"] },
-                { name: "모기에게... (Skit)", producer: ["마인크래프트고수"], feature: ["Ballboy Da Mogi Killer"] },
-                { name: "기본기 Ruler G", producer: ["마인크래프트고수"], feature: ["Ballboy Da Mogi Killer"] },
+                { name: "모기에게... (Skit)", producer: ["마인크래프트고수"], feature: ["sagikun"] },
+                { name: "기본기 Ruler G", producer: ["마인크래프트고수"], feature: ["sagikun"] },
                 { name: "이원문 시발새끼", producer: ["마인크래프트고수"], feature: ["BIG Naugty", "Profe Morri$"] },
                 { name: "대가대 셀카 1위", producer: ["마인크래프트고수"], feature: ["Mogi", "Fi$h"] },
                 { name: "벙어리 새기", producer: ["마인크래프트고수"], feature: ["Mogi"] },
                 { name: "Unknown E.R. Gamer", producer: ["마인크래프트고수"], feature: ["shinji", "Fi$h"] },
                 { name: "김재환 타법 (Skit)", producer: ["마인크래프트고수"] },
-                { name: "BGH Father Remix", producer: ["마인크래프트고수"], feature: ["Fi$h", "MST", "Lil Arj", "Ballboy Da Mogi Killer"] },
+                { name: "BGH Father Remix", producer: ["마인크래프트고수"], feature: ["Fi$h", "MST", "Lil Arj", "sagikun"] },
                 { name: "Outro", producer: ["FluorMeme"] }
             ]
         },
@@ -161,7 +175,7 @@ export const Artist = () => {
                 { name: "POM Skit (Skit)", producer: ["마인크래프트고수"], feature: ["BIG Naugty"] },
                 { name: "Hello, My Name is...", producer: ["마인크래프트고수"], feature: ["Money McDermott"] },
                 { name: "15분", producer: ["마인크래프트고수"], feature: ["Fi$h", "shinji"] },
-                { name: "ERCF Freestyle", producer: ["마인크래프트고수"], feature: ["Mogi", "Ballboy Da Mogi Killer"] },
+                { name: "ERCF Freestyle", producer: ["마인크래프트고수"], feature: ["Mogi", "sagikun"] },
                 { name: "Thank You!", producer: ["마인크래프트고수"], feature: ["Mogi"] }
             ]
         },
@@ -180,49 +194,6 @@ export const Artist = () => {
                 { name: "rod", producer: ["마인크래프트고수"], feature: ["Mogi"] },
                 { name: "돼지흥분제", producer: ["마인크래프트고수"] },
                 { name: "삭베아", producer: ["마인크래프트고수"] }
-            ]
-        },
-        {
-            name: "Addicted",
-            artist: "MST",
-            date: "2020.04.12",
-            type: "싱글",
-            cover: "FluorMeme",
-            mm: "FluorMeme",
-            songs: [
-                {
-                    name: "Addicted",
-                    producer: ["FluorMeme"],
-                    feature: ["Lewis"]
-                }
-            ]
-        },
-        {
-            name: "Void",
-            artist: "MST",
-            date: "2020.04.12",
-            type: "싱글",
-            cover: "FluorMeme",
-            mm: "FluorMeme",
-            songs: [
-                {
-                    name: "Void",
-                    producer: ["FluorMeme"]
-                }
-            ]
-        },
-        {
-            name: "Eyes",
-            artist: "MST",
-            date: "2020.04.07",
-            type: "싱글",
-            cover: "FluorMeme",
-            mm: "FluorMeme",
-            songs: [
-                {
-                    name: "Eyes",
-                    producer: ["FluorMeme"]
-                }
             ]
         },
         {
