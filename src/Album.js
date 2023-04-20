@@ -60,6 +60,18 @@ export const Album = () => {
             position: "프로듀서"
         },
         {
+            name: "김진성",
+            music: ["진서"],
+            since: "2023.04.19",
+            position: "래퍼"
+        },
+        {
+            name: "TwoJins",
+            music: [],
+            since: "2023.04.19",
+            position: "래퍼"
+        },
+        {
             name: "Juts5Bell",
             music: ["진동"],
             since: "2023.01.26",
@@ -92,7 +104,7 @@ export const Album = () => {
             break;
         }
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "sagikun", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "Juts5Bell", "unujangay", "BIG Naugty" , "KE$h B"];
+    const ercf = ["마인크래프트고수", "Billy Boi", "sagikun", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "김진성", "TwoJins", "Juts5Bell", "unujangay", "BIG Naugty" , "KE$h B"];
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {

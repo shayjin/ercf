@@ -60,6 +60,18 @@ export const Artists = () => {
             position: "프로듀서"
         },
         {
+            name: "김진성",
+            music: ["진서"],
+            since: "2023.04.19",
+            position: "래퍼"
+        },
+        {
+            name: "TwoJins",
+            music: [],
+            since: "2023.04.19",
+            position: "래퍼"
+        },
+        {
             name: "Juts5Bell",
             music: ["진동"],
             since: "2023.01.26",
@@ -76,7 +88,7 @@ export const Artists = () => {
             music: ["진동"],
             since: "2023.04.11",
             position: "래퍼"
-        }
+        },
     ];
 
     var li = [];
