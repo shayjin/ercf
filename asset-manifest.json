@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5b62598c.css",
-    "main.js": "/static/js/main.a9e4b49b.js",
+    "main.js": "/static/js/main.31318e8f.js",
     "static/js/787.c3df38c4.chunk.js": "/static/js/787.c3df38c4.chunk.js",
     "static/media/group.png": "/static/media/group.f5bb537829b0ea4959b2.png",
     "static/media/진동.png": "/static/media/진동.41ac6e9db13e11d6af5b.png",
@@ -24,6 +24,7 @@
     "static/media/fluormeme.png": "/static/media/fluormeme.77cdd22bd5743dad0e71.png",
     "static/media/big_naugty.png": "/static/media/big_naugty.8d357d9521d025340feb.png",
     "static/media/billy_boi.png": "/static/media/billy_boi.e9bc710c343169a26982.png",
+    "static/media/김진성.png": "/static/media/김진성.3c1b59bb1eb1011a3a76.png",
     "static/media/mogi.png": "/static/media/mogi.e13b1791d4738ad3f426.png",
     "static/media/cresent.png": "/static/media/cresent.56e088974985053eecf0.png",
     "static/media/eyes.png": "/static/media/eyes.51ae00cf6542d5f4b5df.png",
@@ -47,11 +48,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.5b62598c.css.map": "/static/css/main.5b62598c.css.map",
-    "main.a9e4b49b.js.map": "/static/js/main.a9e4b49b.js.map",
+    "main.31318e8f.js.map": "/static/js/main.31318e8f.js.map",
     "787.c3df38c4.chunk.js.map": "/static/js/787.c3df38c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b62598c.css",
-    "static/js/main.a9e4b49b.js"
+    "static/js/main.31318e8f.js"
   ]
 }
