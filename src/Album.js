@@ -2,109 +2,40 @@ import React from 'react';
 import { useLocation } from 'react-router-dom'
 import { NavBar } from './NavBar';
 import {Link, Route, Routes, BrowserRouter } from 'react-router-dom';
+import ARTISTS from './DB/Artists';
+import JUNIOR_ARTISTS from './DB/JuniorArtists';
+import ALBUMS from './DB/Albums';
+import ercf from './DB/ercf';
 
 export const Album = () => {
-    var artists = [
-        {
-            name: "마인크래프트고수",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.05",
-            position: "리더, 프로듀서"
-        },
-        {
-            name: "Billy Boi",
-            music: ["진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.16",
-            position: "래퍼, 디자이너"
-        },
-        {
-            name: "sagikun",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM"],
-            since: "2014.01.19",
-            position: "래퍼, 스키터"
-        },
-        {
-            name: "Mogi",
-            music: ["진동", "KIK", "POM", "GANG"],
-            since: "2014.02.07",
-            position: "래퍼"
-        },
-        {
-            name: "Shay Jin",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2019.05.01",
-            position: "래퍼"
-        },
-        {
-            name: "MST",
-            music: ["내일이면돼", "진동", "Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
-            since: "2021.08.16",
-            position: "래퍼"
-        },
-        {
-            name: "UnteIl",
-            music: ["진서", "KIK"],
-            since: "2022.06.22",
-            position: "래퍼"
-        },
-        {
-            name: "BIG Naugty",
-            music: ["볼보이 파워", "KIK", "POM"],
-            since: "2022.07.01",
-            position: "래퍼"
-        },
-        {
-            name: "FluorMeme",
-            music: ["내일이면돼", "Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
-            since: "2023.01.03",
-            position: "프로듀서"
-        },
-        {
-            name: "김진성",
-            music: ["진서"],
-            since: "2023.04.19",
-            position: "래퍼"
-        },
-        {
-            name: "TwoJins",
-            music: [],
-            since: "2023.04.19",
-            position: "래퍼"
-        },
-        {
-            name: "Juts5Bell",
-            music: ["진동"],
-            since: "2023.01.26",
-            position: "프로듀서"
-        },
-        {
-            name: "unujangay",
-            music: ["08Basick Remix Remix"],
-            since: "2023.02.02",
-            position: "래퍼"
-        },
-        {
-            name: "KE$h B",
-            music: ["진동"],
-            since: "2023.04.11",
-            position: "래퍼"
+    var album;
+    var url = window.location.href;
+    url = url.substring(url.lastIndexOf("/") + 1).replaceAll("_", " ");
+    console.log(url);
+    for (var alb of ALBUMS) {
+        if (alb.engName === url) {
+            album = alb;
+            break;
         }
-    ];
+    }
 
-
-    const location = useLocation()
-    const album = location.state.component;
     var li = [];
     var index;
     var coverInd;
 
-    for (var a = 0; artists.length; a++) {
-        if (artists[a].name === album.cover) {
+    for (var a = 0; a < ARTISTS.length; a++) {
+        if (ARTISTS[a].name === album.cover) {
             coverInd = a;
             break;
         }
     }
-    const ercf = ["마인크래프트고수", "Billy Boi", "sagikun", "Mogi", "Shay Jin", "MST", "UnteIl", "FluorMeme", "김진성", "TwoJins", "Juts5Bell", "unujangay", "BIG Naugty" , "KE$h B"];
+
+    for (var a = 0; a < JUNIOR_ARTISTS.length; a++) {
+        if (JUNIOR_ARTISTS[a].name === album.cover) {
+            coverInd = a;
+            break;
+        }
+    }
     
     for (var i = 0; i < album.songs.length; i++) {
         if (album.songs[i].producer.length > 0) {
@@ -115,16 +46,25 @@ export const Album = () => {
                 if (ercf.includes(producer)) {
                     index = -1;
 
-                    for (var a = 0; artists.length; a++) {
-                        if (artists[a].name == producer) {
+                    for (var a = 0; a < ARTISTS.length; a++) {
+                        if (ARTISTS[a].name == producer) {
                             index = a;
+                            if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`}>{producer}</Link>);
+                            else xx.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`}>{producer}, </Link>);
                             break;
                         }
-
                     }
 
-                    if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{producer}</Link>);
-                    else xx.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{producer}, </Link>);
+                    for (var a = 0; a < JUNIOR_ARTISTS.length; a++) {
+                        if (JUNIOR_ARTISTS[a].name == producer) {
+                            index = a;
+                            if (k + 1 === album.songs[i].producer.length) xx.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[index].name.replace(" ", "_")}`}>{producer}</Link>);
+                            else xx.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[index].name.replace(" ", "_")}`}>{producer}, </Link>);
+                            break;
+                        }
+                    }
+
+                
                 } else {
                     xx.push(album.songs[i].producer);
                 }
@@ -151,15 +91,25 @@ export const Album = () => {
                 if (ercf.includes(feature)) {
                     index = -1;
 
-                    for (var a = 0; artists.length; a++) {
-                        if (artists[a].name == feature) {
+                    for (var a = 0; a < ARTISTS.length; a++) {
+                        if (ARTISTS[a].name == feature) {
                             index = a;
+                            if (j + 1 === album.songs[i].feature.length) x.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`}>{feature}</Link>);
+                            else x.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`}>{feature}, </Link>);
                             break;
                         }
                     }
 
-                    if (j + 1 === album.songs[i].feature.length) x.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{feature}</Link>);
-                    else x.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[index]}}>{feature}, </Link>);
+                    for (var a = 0; a < JUNIOR_ARTISTS.length; a++) {
+                        if (JUNIOR_ARTISTS[a].name == feature) {
+                            index = a;
+                            if (j + 1 === album.songs[i].feature.length) x.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[index].name.replace(" ", "_")}`}>{feature}</Link>);
+                            else x.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[index].name.replace(" ", "_")}`}>{feature}, </Link>);
+                            break;
+                        }
+                    }
+
+                    
                 } else {
                     if (j + 1 === album.songs[i].feature.length) x.push(album.songs[i].feature[j]);
                     else x.push(album.songs[i].feature[j] + ", ");
@@ -180,24 +130,35 @@ export const Album = () => {
 
     var img = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
 
+    if (album.name == "sagikun") img = require("./sources/sagikun_album.png");
+
     var a = album.artist.split(" & ");
     var artistArray = [];
+
+    console.log(a);
 
     for (var b = 0; b < a.length; b++) {
         var artist = a[b];
         var ind = -1;
 
-        for (var c = 0; c < artists.length; c++){
-            if (artists[c].name == artist) {
+        for (var c = 0; c < ARTISTS.length; c++){
+            if (ARTISTS[c].name == artist) {
                 ind = c;
+                artistArray.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[ind].name.replace(" ", "_")}`}>{artist}</Link>);
                 break;
             }
         }
 
-        if (ind !== -1) {
-            artistArray.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[ind]}}>{artist}</Link>);
-        } else {
-            artistArray.push("hi");
+        for (var c = 0; c < JUNIOR_ARTISTS.length; c++){
+            if (JUNIOR_ARTISTS[c].name == artist) {
+                ind = c;
+                artistArray.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[ind].name.replace(" ", "_")}`}>{artist}</Link>);
+                break;
+            }
+        }
+
+        if (ind === -1) {
+            artistArray.push(artist);
         }
 
         if (b + 1 < a.length) {
@@ -208,7 +169,24 @@ export const Album = () => {
     var cover = [];
 
     if (ercf.includes(album.cover)) {
-        cover.push(<Link className="viewProj" to="/ERCF/Artist" state={{component: artists[coverInd]}}>{album.cover}</Link>);
+        console.log(album.cover);
+        for (var index = 0; index < ARTISTS.length; index++) {
+            var a = ARTISTS[index];
+            console.log(a.name);
+            if (a.name === album.cover) {
+                cover.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`} >{album.cover}</Link>);
+                break;
+            }
+        }
+
+        for (var index = 0; index < JUNIOR_ARTISTS.length; index++) {
+            var a = JUNIOR_ARTISTS[index];
+            if (a.name === album.cover) {
+                cover.push(<Link className="viewProj" to={`/ERCF/Artist/${JUNIOR_ARTISTS[index].name.replace(" ", "_")}`} >{album.cover}</Link>);
+                break;
+            }
+        }
+        
     } else {
         cover.push(<p>Cover Design: {album.cover}</p>);
     }

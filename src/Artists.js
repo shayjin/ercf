@@ -1,105 +1,36 @@
 import React from 'react';
 import { NavBar } from './NavBar';
 import {Link, Route, Routes, BrowserRouter } from 'react-router-dom';
+import ARTISTS from './DB/Artists';
+import JUNIOR_ARTISTS from './DB/JuniorArtists';
 
 export const Artists = () => {
-
-    var artists = [
-        {
-            name: "마인크래프트고수",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.05",
-            position: "리더, 프로듀서"
-        },
-        {
-            name: "Billy Boi",
-            music: ["진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2013.10.16",
-            position: "래퍼, 디자이너"
-        },
-        {
-            name: "sagikun",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM"],
-            since: "2014.01.19",
-            position: "래퍼, 스키터"
-        },
-        {
-            name: "Mogi",
-            music: ["진동", "KIK", "POM", "GANG"],
-            since: "2014.02.07",
-            position: "래퍼"
-        },
-        {
-            name: "Shay Jin",
-            music: ["진동", "볼보이 파워", "진서", "KIK", "POM", "GANG", "JUCK"],
-            since: "2019.05.01",
-            position: "래퍼"
-        },
-        {
-            name: "MST",
-            music: ["내일이면돼", "진동", "Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
-            since: "2021.08.16",
-            position: "래퍼"
-        },
-        {
-            name: "UnteIl",
-            music: ["진서", "KIK"],
-            since: "2022.06.22",
-            position: "래퍼"
-        },
-        {
-            name: "BIG Naugty",
-            music: ["볼보이 파워", "KIK", "POM"],
-            since: "2022.07.01",
-            position: "래퍼"
-        },
-        {
-            name: "FluorMeme",
-            music: ["Cresent", "어쩔티비", "LaTale", "KIK", "GANG"],
-            since: "2023.01.03",
-            position: "프로듀서"
-        },
-        {
-            name: "김진성",
-            music: ["진서"],
-            since: "2023.04.19",
-            position: "래퍼"
-        },
-        {
-            name: "TwoJins",
-            music: [],
-            since: "2023.04.19",
-            position: "래퍼"
-        },
-        {
-            name: "Juts5Bell",
-            music: ["진동"],
-            since: "2023.01.26",
-            position: "프로듀서"
-        },
-        {
-            name: "unujangay",
-            music: ["08Basick Remix Remix"],
-            since: "2023.02.02",
-            position: "래퍼"
-        },
-        {
-            name: "KE$h B",
-            music: ["진동"],
-            since: "2023.04.11",
-            position: "래퍼"
-        },
-    ];
-
     var li = [];
+    var li2 = [];
 
-    for (var i = 0; i < artists.length; i++) {
-        var artist = artists[i];
+    for (var i = 0; i < ARTISTS.length; i++) {
+        var artist = ARTISTS[i];
 
         artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
         li.push(
             <li>
-                <Link className="viewProj" to="/ERCF/Artist" state={{component: artist}}>
+                <Link className="viewProj" to={`/ERCF/Artist/${artist.name.replaceAll(" ","_")}`}>
+                    <button id="myBtn">
+                        <img src={artist.picture}/>
+                        <p>{artist.name}</p>
+                    </button> 
+                </Link>
+            </li> 
+        );
+    }
+
+    for (var i = 0; i < JUNIOR_ARTISTS.length; i++) {
+        var artist = JUNIOR_ARTISTS[i];
+
+        artist.picture = require("./sources/" + artist.name.replaceAll(" ", "_").toLowerCase() + ".png");
+        li2.push(
+            <li>
+                <Link className="viewProj" to={`/ERCF/Artist/${artist.name.replaceAll(" ","_")}`}>
                     <button id="myBtn">
                         <img src={artist.picture}/>
                         <p>{artist.name}</p>
@@ -113,8 +44,13 @@ export const Artists = () => {
         <>
             <NavBar />
             <div className="body">
+            <h3 className='ercfTitle'>ERCF</h3>
                 <ul className="artistUl">
                     {li}
+                </ul>
+                <h3 className='ercfTitle'>ERCF 주니어스</h3>
+                <ul className="artistUl">
+                    {li2}
                 </ul>
             </div>
         </>

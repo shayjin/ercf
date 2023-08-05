@@ -24,13 +24,19 @@ function GroupPic() {
     support.push(<img src={pic} />)
   }
 
-  return (
-    <>
-      <img className="main-pic" src={require("./sources/group.png")} />
-      <img className="namu" src={require("./sources/namu.png")} />
+  /*
+
+        <img className="namu" src={require("./sources/namu.png")} />
       <div className='support'>
         {support}
       </div>
+    */
+
+  return (
+    <>
+          <img className="main-pic" src={require("./sources/group.png")} />
+          <img className="history" src={require("./sources/history1.png")} />
+      <img className="history" src={require("./sources/history2.png")} />
     </>
   );
 }
@@ -55,10 +61,10 @@ function App() {
           <Route path="/ERCF" element={<Main />} />
           <Route path="*" element={<p>Path not resolved</p>} />
           <Route path="/ERCF/Artists" element={<Artists />} />
-          <Route path="/ERCF/Artist" element={<Artist />} />
+          <Route path="/ERCF/Artist/:id" element={<Artist />} />
           <Route path="/ERCF/Contact" element={<Contact />} />
           <Route path="/ERCF/Music" element={<Music />} />
-          <Route path="/ERCF/Album" element={<Album />} />
+          <Route path="/ERCF/Album/:id" element={<Album />} />
           <Route path="/ERCF/About" element={<About />} />
         </Routes>
       </BrowserRouter>

@@ -221,8 +221,22 @@ a {
   margin-top: 10px;
 }
 
+.history {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 800px;
+  height: auto;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .namu {
+    width: 100vw;
+    height: auto;
+  }
+
+  .history {
     width: 100vw;
     height: auto;
   }
@@ -278,4 +292,10 @@ a {
     width: 70px;
     height: 70px;
   }
+}
+
+.ercfTitle {
+  text-align: center;
+  margin-top: 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
