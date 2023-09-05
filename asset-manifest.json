@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e7b5f38f.css",
-    "main.js": "/static/js/main.55b39237.js",
+    "main.js": "/static/js/main.249a48f2.js",
     "static/js/787.c3df38c4.chunk.js": "/static/js/787.c3df38c4.chunk.js",
     "static/media/group.png": "/static/media/group.f5bb537829b0ea4959b2.png",
     "static/media/진동.png": "/static/media/진동.41ac6e9db13e11d6af5b.png",
@@ -42,7 +42,7 @@
     "static/media/eyes.png": "/static/media/eyes.51ae00cf6542d5f4b5df.png",
     "static/media/void.png": "/static/media/void.4cac2ba635f17c772613.png",
     "static/media/addicted.png": "/static/media/addicted.1719334ea81fac8bee4c.png",
-    "static/media/history1.png": "/static/media/history1.fcacc173d6c5f0cd0dff.png",
+    "static/media/history1.png": "/static/media/history1.dc51bc0b91970f025a92.png",
     "static/media/unteil.png": "/static/media/unteil.5c4372bf111e91d4f89d.png",
     "static/media/unujangay.png": "/static/media/unujangay.36c95d95ad0772fc3e08.png",
     "static/media/08basick_remix_remix.png": "/static/media/08basick_remix_remix.9a7084fbbe24a8619734.png",
@@ -60,11 +60,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.e7b5f38f.css.map": "/static/css/main.e7b5f38f.css.map",
-    "main.55b39237.js.map": "/static/js/main.55b39237.js.map",
+    "main.249a48f2.js.map": "/static/js/main.249a48f2.js.map",
     "787.c3df38c4.chunk.js.map": "/static/js/787.c3df38c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b5f38f.css",
-    "static/js/main.55b39237.js"
+    "static/js/main.249a48f2.js"
   ]
 }
