@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e7b5f38f.css",
-    "main.js": "/static/js/main.df9b90b9.js",
+    "main.js": "/static/js/main.55b39237.js",
     "static/js/787.c3df38c4.chunk.js": "/static/js/787.c3df38c4.chunk.js",
     "static/media/group.png": "/static/media/group.f5bb537829b0ea4959b2.png",
     "static/media/진동.png": "/static/media/진동.41ac6e9db13e11d6af5b.png",
     "static/media/김도윤.png": "/static/media/김도윤.214a20e99f68da46e786.png",
     "static/media/mogi_handsome.png": "/static/media/mogi_handsome.f2c8c8f2cae119b6b60a.png",
     "static/media/pom.png": "/static/media/pom.8a3f28790775b564a490.png",
+    "static/media/m&m.png": "/static/media/m&m.a975f5307c819b97b714.png",
     "static/media/ercf_bg.png": "/static/media/ercf_bg.86ed46ffe3ba5bfd9f51.png",
     "static/media/어쩔티비.png": "/static/media/어쩔티비.3779e79b27f1efe4c7de.png",
     "static/media/160_linn.png": "/static/media/160_linn.7f9af6ff6b3fbbc2bf19.png",
@@ -59,11 +60,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.e7b5f38f.css.map": "/static/css/main.e7b5f38f.css.map",
-    "main.df9b90b9.js.map": "/static/js/main.df9b90b9.js.map",
+    "main.55b39237.js.map": "/static/js/main.55b39237.js.map",
     "787.c3df38c4.chunk.js.map": "/static/js/787.c3df38c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b5f38f.css",
-    "static/js/main.df9b90b9.js"
+    "static/js/main.55b39237.js"
   ]
 }
