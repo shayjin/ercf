@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e7b5f38f.css",
-    "main.js": "/static/js/main.249a48f2.js",
+    "main.js": "/static/js/main.4616989b.js",
     "static/js/787.c3df38c4.chunk.js": "/static/js/787.c3df38c4.chunk.js",
     "static/media/group.png": "/static/media/group.f5bb537829b0ea4959b2.png",
     "static/media/진동.png": "/static/media/진동.41ac6e9db13e11d6af5b.png",
@@ -13,14 +13,17 @@
     "static/media/어쩔티비.png": "/static/media/어쩔티비.3779e79b27f1efe4c7de.png",
     "static/media/160_linn.png": "/static/media/160_linn.7f9af6ff6b3fbbc2bf19.png",
     "static/media/kik.png": "/static/media/kik.2fd1889c95f734b98009.png",
+    "static/media/billy_boi_state_university.png": "/static/media/billy_boi_state_university.ff7b01afb65a7111d656.png",
     "static/media/juck.png": "/static/media/juck.9dca860a3f4cdf5b3bfa.png",
     "static/media/gang.png": "/static/media/gang.39502a11aa3a20eefc6e.png",
     "static/media/verde.png": "/static/media/verde.0cff6d8f69ad6b0acdd9.png",
     "static/media/내일이면돼.png": "/static/media/내일이면돼.42b27ff5afea9585ef83.png",
     "static/media/group2.png": "/static/media/group2.81336359fb303a18d3f2.png",
     "static/media/김영석.png": "/static/media/김영석.9d423563d21f3a934300.png",
+    "static/media/shawty.png": "/static/media/shawty.8ec4459308bbbcf82ba6.png",
     "static/media/juts5bell.png": "/static/media/juts5bell.b263c579a8420c79793d.png",
     "static/media/알바두탕.png": "/static/media/알바두탕.8a48a8ca40d52ea6c2bc.png",
+    "static/media/はらぐろ.png": "/static/media/はらぐろ.41eee016adda02099ee6.png",
     "static/media/latale.png": "/static/media/latale.7b9e0227ce650d662647.png",
     "static/media/sagikun.png": "/static/media/sagikun.ad0c9a017994bf0c041e.png",
     "static/media/mogi_killer.png": "/static/media/mogi_killer.fce691b698cabed0d8cf.png",
@@ -41,8 +44,9 @@
     "static/media/cresent.png": "/static/media/cresent.56e088974985053eecf0.png",
     "static/media/eyes.png": "/static/media/eyes.51ae00cf6542d5f4b5df.png",
     "static/media/void.png": "/static/media/void.4cac2ba635f17c772613.png",
+    "static/media/Screenshot 2023-09-16 at 1.11.11 AM.png": "/static/media/Screenshot 2023-09-16 at 1.11.11 AM.4edf179fbf9ca1107ad0.png",
     "static/media/addicted.png": "/static/media/addicted.1719334ea81fac8bee4c.png",
-    "static/media/history1.png": "/static/media/history1.dc51bc0b91970f025a92.png",
+    "static/media/history1.png": "/static/media/history1.b03013b9e07b5858a5e2.png",
     "static/media/unteil.png": "/static/media/unteil.5c4372bf111e91d4f89d.png",
     "static/media/unujangay.png": "/static/media/unujangay.36c95d95ad0772fc3e08.png",
     "static/media/08basick_remix_remix.png": "/static/media/08basick_remix_remix.9a7084fbbe24a8619734.png",
@@ -60,11 +64,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.e7b5f38f.css.map": "/static/css/main.e7b5f38f.css.map",
-    "main.249a48f2.js.map": "/static/js/main.249a48f2.js.map",
+    "main.4616989b.js.map": "/static/js/main.4616989b.js.map",
     "787.c3df38c4.chunk.js.map": "/static/js/787.c3df38c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b5f38f.css",
-    "static/js/main.249a48f2.js"
+    "static/js/main.4616989b.js"
   ]
 }
