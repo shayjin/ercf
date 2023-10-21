@@ -35,8 +35,8 @@ function GroupPic() {
   return (
     <>
           <img className="main-pic" src={require("./sources/group.png")} />
+          <img className="main-pic" src={require("./sources/billy_boi_state_university.png")} />
           <img className="history" src={require("./sources/history1.png")} />
-      <img className="history" src={require("./sources/history2.png")} />
     </>
   );
 }

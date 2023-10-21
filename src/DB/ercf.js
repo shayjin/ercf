@@ -6,17 +6,11 @@ const ercf = [
     "Shay Jin", 
     "MST", 
     "UnteIl", 
-    "FluorMeme", 
+    "BIG Naugty", 
     "김진성", 
-    "TwoJins", 
     "Juts5Bell", 
     "unujangay", 
-    "BIG Naugty", 
     "KE$h B", 
-    "김도윤",
-    "김영석",
-    "160 linn",
-    "Verde"
 ];
 
 export default ercf;

@@ -12,6 +12,7 @@ export const Music = () => {
         album.picture = require("./sources/" + album.name.replaceAll(" ", "_").toLowerCase() + ".png");
         console.log(album.picture);
         if (album.name == "sagikun") album.picture = require("./sources/sagikun_album.png");
+        if (album.name == "shawty!") album.picture = require("./sources/shawty.png");
 
         li.push(
             <li>

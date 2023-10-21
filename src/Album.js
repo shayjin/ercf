@@ -12,6 +12,11 @@ export const Album = () => {
     var url = window.location.href;
     url = url.substring(url.lastIndexOf("/") + 1).replaceAll("_", " ");
     console.log(url);
+
+    if (url === "%E3%81%AF%E3%82%89%E3%81%90%E3%82%8D") {
+        url = "はらぐろ";
+    }
+
     for (var alb of ALBUMS) {
         if (alb.engName === url) {
             album = alb;
@@ -174,6 +179,7 @@ export const Album = () => {
             var a = ARTISTS[index];
             console.log(a.name);
             if (a.name === album.cover) {
+                console.log("HI")
                 cover.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`} >{album.cover}</Link>);
                 break;
             }
@@ -199,7 +205,7 @@ export const Album = () => {
                 <div className="album" >
                     <img src={img}/>
                     <p><b>[{album.type}] {album.name} - {artistArray} ({album.date})</b></p>
-                    <p>Cover Design: {cover}</p>
+                    <p>Cover Design: {album.cover}</p>
                     <table>
                         <tr>
                             <th>#</th>

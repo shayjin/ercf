@@ -1,38 +1,34 @@
 const ALBUMS = [
     {
-        name: "시발자동차",
-        engName: "sibalcar",
-        artist: "Billy Boi & 김도윤 & 김영석",
-        date: "2023.08.05",
-        type: "싱글",
-        cover: "FluorMeme",
-        mm: "Juts5Bell",
+        name: "Billy Boi State University",
+        engName: "Billy Boi State University",
+        artist: "Billy Boi",
+        date: "2023.10.01",
+        type: "Mixtape",
+        cover: "Billy Boi",
+        mm: "마인크래프트고수",
         songs: [
-            {name: "시발자동차", producer: ["마인크래프트고수"]}
+            {name: "#정원식2", producer: ["마인크래프트고수"]},
+            {name: "JaenaN", producer: ["마인크래프트고수"], feature: ["Shay Jin"]},
+            {name: "LeeHain 2001", producer: ["FluorMeme"]},
+            {name: "시발자동차", producer: ["마인크래프트고수"], feature: ["Hareubang", "김영석"]},
+            {name: "Interview Interruption (Skit)", producer: ["Juts5Bell"], feature: ["sagikun"]},
+            {name: "All No Matter", producer: ["FluorMeme"], feature: ["Verde", "160 linn"]},
         ]
     },
     {
-        name: "알바두탕",
-        engName: "albadutang",
-        artist: "160 linn & LOGOS & 성진현",
-        date: "2023.08.05",
-        type: "싱글",
-        cover: "FluorMeme",
-        mm: "link505",
+        name: "M&M",
+        engName: "m&m",
+        artist: "MST & 마인크래프트고수",
+        date: "2023.08.14",
+        type: "Mixtape",
+        cover: "KE$h B",
+        mm: "마인크래프트고수",
         songs: [
-            {name: "알바두탕", producer: ["konu"]}
-        ]
-    },
-    {
-        name: "All No Matter",
-        engName: "All No Matter",
-        artist: "160 linn & Billy Boi & Verde",
-        date: "2023.06.26",
-        type: "싱글",
-        cover: "Verde",
-        mm: "Juts5Bell",
-        songs: [
-            {name: "All No Matter", producer: ["FluorMeme"]}
+            {name: "시발자동차 2", producer: ["마인크래프트고수"], feature: ["Nike Sangwoo"]},
+            {name: "나르샤", producer: ["마인크래프트고수"]},
+            {name: "몽환의 숲", producer: ["마인크래프트고수"]},
+            {name: "M&M Freestyle", producer: ["마인크래프트고수"], feature: ["Billy Boi"]}
         ]
     },
     {
@@ -159,12 +155,12 @@ const ALBUMS = [
         mm: "마인크래프트고수",
         songs: [
             { name: "Bustdown!", producer: ["마인크래프트고수"] },
-            { name: "기분조 은바람", producer: ["마인크래프트고수"], feature: ["Dok3"] },
+            { name: "Gibunjo Silver Wind", producer: ["마인크래프트고수"], feature: ["Dok3"] },
             { name: "두진서 Freestyle", producer: ["마인크래프트고수"] },
             { name: "ruf", producer: ["마인크래프트고수"], feature: ["UnteIl"] },
             { name: "노인공격", producer: ["마인크래프트고수"], feature: ["Big anDre's Bo$$", "shinji", "Davy Jones"] },
             { name: "bbbp", producer: ["마인크래프트고수"], feature: ["Billy Boi"] },
-            { name: "딕소스!", producer: ["마인크래프트고수"], feature: ["sagikun"] },
+            { name: "Dick Sauce!", producer: ["마인크래프트고수"], feature: ["sagikun"] },
             { name: "신지혜 만날래!", producer: ["마인크래프트고수"], feature: ["김진성", "Fi$h"] }
         ]
     },
@@ -248,7 +244,7 @@ const ALBUMS = [
             { name: "20.5학번 Freestyle", producer: ["마인크래프트고수"] },
             { name: "rod", producer: ["마인크래프트고수"], feature: ["Mogi"] },
             { name: "돼지흥분제", producer: ["마인크래프트고수"] },
-            { name: "삭베아", producer: ["마인크래프트고수"] }
+            { name: "Shark Veya", producer: ["마인크래프트고수"] }
         ]
     },
     {
@@ -261,11 +257,11 @@ const ALBUMS = [
         mm: "마인크래프트고수",
         songs: [
             { name: "Abyss", producer: ["마인크래프트고수"], feature: ["Profe Morris", "Fi$h"] },
-            { name: "공고문", producer: ["마인크래프트고수"], feature: ["shinji"] },
-            { name: "힙합 전사들", producer: ["마인크래프트고수"], feature: ["Profe Morri$", "ViggyMcPiggy"] },
-            { name: "마인크래프트 Freestyle", producer: ["마인크래프트고수"], feature: ["Lil Sillyman", "Money McDermott"] },
+            { name: "Gonggomoon", producer: ["마인크래프트고수"], feature: ["shinji"] },
+            { name: "Hiphop Warriors", producer: ["마인크래프트고수"], feature: ["Profe Morri$", "ViggyMcPiggy"] },
+            { name: "Minecraft Freestyle", producer: ["마인크래프트고수"], feature: ["Lil Sillyman", "Money McDermott"] },
             { name: "Juck Fose!", producer: ["마인크래프트고수"], feature: ["Mijo", "Fi$h"] },
-            { name: "멈블랩", producer: ["마인크래프트고수"], feature: ["Fi$h", "Profe Morri$"] },
+            { name: "Mumble Rap!", producer: ["마인크래프트고수"], feature: ["Fi$h", "Profe Morri$"] },
             { name: "181230", producer: ["마인크래프트고수"], feature: ["Lasaga Boi", "Mark Kim", "Big anDre's Bo$$"] },
             { name: "Trying to...", producer: ["마인크래프트고수"], feature: ["Fi$h"] },
             { name: "#530", producer: ["마인크래프트고수"], feature: ["Lasaga Boi", "Big anDre's Bo$$"] },

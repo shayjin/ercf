@@ -19,14 +19,6 @@ export const Artist = () => {
         url = "김진성";
     }
 
-    if (url === "%EA%B9%80%EB%8F%84%EC%9C%A4") {
-        url = "김도윤";
-    }
-
-    if (url === "%EA%B9%80%EC%98%81%EC%84%9D") {
-        url = "김영석";
-    }
-
     for (var art of ARTISTS) {
         if (art.name === url) {
             artist = art;
