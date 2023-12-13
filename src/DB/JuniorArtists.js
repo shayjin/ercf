@@ -1,5 +1,11 @@
 const JUNIOR_ARTISTS = [
     {
+        name: "BIG Naugty",
+        music: ["Mogi Killer", "sagikun", "KIK", "POM"],
+        since: "2022.07.01",
+        position: "스키터"
+    },
+    {
         name: "Juts5Bell",
         music: ["Billy Boi State University", "진동"],
         since: "2023.01.26",
@@ -9,7 +15,7 @@ const JUNIOR_ARTISTS = [
         name: "unujangay",
         music: ["Mogi Killer", "08Basick Remix Remix"],
         since: "2023.02.02",
-        position: "래퍼"
+        position: "스키터"
     },
     {
         name: "KE$h B",

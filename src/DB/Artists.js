@@ -1,9 +1,9 @@
 const ARTISTS = [
     {
-        name: "마인크래프트고수",
+        name: "Shay Jin",
         music: ["Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
         since: "2013.10.05",
-        position: "리더, 프로듀서"
+        position: "래퍼"
     },
     {
         name: "Billy Boi",
@@ -21,12 +21,6 @@ const ARTISTS = [
         name: "Mogi",
         music: ["Mogi Killer", "진동", "KIK", "POM", "GANG"],
         since: "2014.02.07",
-        position: "스키터"
-    },
-    {
-        name: "Shay Jin",
-        music: ["Billy Boi State University", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
-        since: "2019.05.01",
         position: "래퍼"
     },
     {
@@ -42,15 +36,15 @@ const ARTISTS = [
         position: "래퍼"
     },
     {
-        name: "BIG Naugty",
-        music: ["Mogi Killer", "sagikun", "KIK", "POM"],
-        since: "2022.07.01",
-        position: "스키터"
-    },
-    {
         name: "김진성",
         music: ["진서"],
         since: "2023.04.19",
+        position: "래퍼"
+    },
+    {
+        name: "gibongi",
+        music: ["진동"],
+        since: "2023.11.06",
         position: "래퍼"
     }
 ];
