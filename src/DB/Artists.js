@@ -7,7 +7,7 @@ const ARTISTS = [
     },
     {
         name: "Billy Boi",
-        music: ["Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
+        music: ["쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
         since: "2013.10.16",
         position: "래퍼, 디자이너"
     },
@@ -25,7 +25,7 @@ const ARTISTS = [
     },
     {
         name: "MST",
-        music: ["M&M", "내일이면돼", "진동", "Cresent", "어쩔티비", "LaTale", "진서", "KIK"],
+        music: ["twenty plus", "M&M", "내일이면돼", "진동", "초승달", "어쩔티비", "LaTale", "진서", "KIK"],
         since: "2021.08.16",
         position: "래퍼"
     },

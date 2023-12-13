@@ -51,7 +51,7 @@ export const Artist = () => {
 
         var img = require("./sources/" + album.replaceAll(" ", "_").toLowerCase() + ".png");
         if (album == "sagikun") img = require("./sources/sagikun_album.png");
-
+        console.log(index);
         li.push(
             <Link className="viewProj" to={`/ERCF/Album/${ALBUMS[index].engName.replaceAll(" ", "_")}`}>
               <img src={img}/>

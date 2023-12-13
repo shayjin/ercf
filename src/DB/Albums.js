@@ -142,7 +142,7 @@ const ALBUMS = [
     },
     {
         name: "초승달",
-        engName: "Cresent",
+        engName: "cresent",
         artist: "MST",
         date: "2022.04.08",
         type: "싱글",
