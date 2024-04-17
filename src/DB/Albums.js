@@ -1,5 +1,25 @@
 const ALBUMS = [
     {
+        name: "BILLY JIN",
+        engName: "BILLY JIN",
+        artist: "Shay Jin & Billy Boi",
+        date: "2024.04.09",
+        type: "Mixtape",
+        cover: "Billy Boi",
+        mm: "Shay Jin x Juts5Bell",
+        songs: [
+            {name: "3 DAY CUP", producer: ["Shay Jin"]},
+            {name: "B THAGGER", producer: ["Shay Jin"]},
+            {name: "G.M.F.", producer: ["Shay Jin"], feature: ["Don back", "160 linn", "LOGOS"]},
+            {name: "DON BACK FUCKS II", producer: ["Shay Jin"], feature: ["Depretown", "Don back", "160 linn", "LOGOS"]},
+            {name: "SS ELEMENTARY SCHOOL", producer: ["Shay Jin"], feature: ["unujangay", "MST"]},
+            {name: "GYUNGJOO GUKBAP", producer: ["Shay Jin"], feature: ["서주현", "160 linn"]},
+            {name: "PHILLY DRIFT", producer: ["Shay Jin"], feature: ["김진성", "Mogi"]},
+            {name: "LEE WONMOON DAEGARI", producer: ["Shay Jin"]},
+            {name: "#BRINGSAGIKUNBACK", producer: ["Shay Jin"]},
+        ]
+    },
+    {
         name: "twenty plus",
         engName: "twenty plus",
         artist: "MST",

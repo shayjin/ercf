@@ -34,7 +34,7 @@ function GroupPic() {
 
   return (
     <>
-          <img className="main-pic" src={require("./sources/twenty_plus.png")} />
+          <img className="main-pic" src={require("./sources/ercfuckingang.png")} />
           <img className="main-pic" src={require("./sources/group.png")} />
     </>
   );
