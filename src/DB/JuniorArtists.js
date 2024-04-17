@@ -7,18 +7,18 @@ const JUNIOR_ARTISTS = [
     },
     {
         name: "Juts5Bell",
-        music: ["Billy Boi State University", "진동"],
+        music: ["BILLY JIN", "Billy Boi State University", "진동"],
         since: "2023.01.26",
-        position: "프로듀서"
+        position: "프로듀서, 오디오 엔지니어"
     },
     {
         name: "unujangay",
-        music: ["Mogi Killer", "08Basick Remix Remix"],
+        music: ["BILLY JIN", "Mogi Killer", "08Basick Remix Remix"],
         since: "2023.02.02",
-        position: "스키터"
+        position: "래퍼"
     },
     {
-        name: "KE$h B",
+        name: "KESH B",
         music: ["M&M", "Mogi Killer", "진동"],
         since: "2023.04.11",
         position: "디자이너"

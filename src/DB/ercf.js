@@ -10,7 +10,7 @@ const ercf = [
     "gibongi",
     "Juts5Bell", 
     "unujangay", 
-    "KE$h B", 
+    "KESH B", 
 ];
 
 export default ercf;

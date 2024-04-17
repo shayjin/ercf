@@ -1,13 +1,13 @@
 const ARTISTS = [
     {
         name: "Shay Jin",
-        music: ["Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
+        music: ["BILLY JIN", "Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
         since: "2013.10.05",
-        position: "래퍼"
+        position: "래퍼, 프로듀서"
     },
     {
         name: "Billy Boi",
-        music: ["쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
+        music: ["BILLY JIN", "쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
         since: "2013.10.16",
         position: "래퍼, 디자이너"
     },
@@ -19,13 +19,13 @@ const ARTISTS = [
     },
     {
         name: "Mogi",
-        music: ["Mogi Killer", "진동", "KIK", "POM", "GANG"],
+        music: ["BILLY JIN", "Mogi Killer", "진동", "KIK", "POM", "GANG"],
         since: "2014.02.07",
         position: "래퍼"
     },
     {
         name: "MST",
-        music: ["twenty plus", "M&M", "내일이면돼", "진동", "초승달", "어쩔티비", "LaTale", "진서", "KIK"],
+        music: ["BILLY JIN", "twenty plus", "M&M", "내일이면돼", "진동", "초승달", "어쩔티비", "LaTale", "진서", "KIK"],
         since: "2021.08.16",
         position: "래퍼"
     },
@@ -37,7 +37,7 @@ const ARTISTS = [
     },
     {
         name: "김진성",
-        music: ["진서"],
+        music: ["BILLY JIN", "진서"],
         since: "2023.04.19",
         position: "래퍼"
     },
