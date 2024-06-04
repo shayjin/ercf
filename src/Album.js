@@ -140,7 +140,6 @@ export const Album = () => {
     var a = album.artist.split(" & ");
     var artistArray = [];
 
-    console.log(a);
 
     for (var b = 0; b < a.length; b++) {
         var artist = a[b];
@@ -174,12 +173,10 @@ export const Album = () => {
     var cover = [];
 
     if (ercf.includes(album.cover)) {
-        console.log(album.cover);
         for (var index = 0; index < ARTISTS.length; index++) {
             var a = ARTISTS[index];
             console.log(a.name);
             if (a.name === album.cover) {
-                console.log("HI")
                 cover.push(<Link className="viewProj" to={`/ERCF/Artist/${ARTISTS[index].name.replace(" ", "_")}`} >{album.cover}</Link>);
                 break;
             }
@@ -205,7 +202,6 @@ export const Album = () => {
                 <div className="album" >
                     <img src={img}/>
                     <p><b>[{album.type}] {album.name} - {artistArray} ({album.date})</b></p>
-                    <p>Cover Design: {album.cover}</p>
                     <table>
                         <tr>
                             <th>#</th>
@@ -215,6 +211,10 @@ export const Album = () => {
                         {li}
                     </table>
                 </div>
+            </div>
+            <div className='body2'>
+                <h3>Credits:</h3>
+                <p><b>Cover Design:</b> {album.cover} <br/> <b>Mixing:</b> {album.mix} <br/> <b>Mastering:</b> {album.master}</p>
             </div>
         </>
 

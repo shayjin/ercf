@@ -6,7 +6,8 @@ const ALBUMS = [
         date: "2024.04.09",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin x Juts5Bell",
+        mix: "Shay Jin, Juts5Bell",
+        master: "Shay Jin, Juts5Bell",
         songs: [
             {name: "3 DAY CUP", producer: ["Shay Jin"]},
             {name: "B THAGGER", producer: ["Shay Jin"]},
@@ -20,13 +21,34 @@ const ALBUMS = [
         ]
     },
     {
+        name: "기본기 mixtape 0",
+        engName: "gibongi mixtape 0",
+        artist: "gibongi",
+        date: "2023.12.30",
+        type: "Mixtape",
+        cover: "gibongi",
+        mix: "gibongi",
+        master: "gibongi",
+        songs: [
+            {name: "한국야동", producer: ["Howard Kim"]},
+            {name: "이상기후", producer: ["Howard Kim"]},
+            {name: "날아라 테켄", producer: ["Howard Kim"]},
+            {name: "슬슬", producer: ["Howard Kim"]},
+            {name: "청개구리", producer: ["Howard Kim"]},
+            {name: "아쌈비치", producer: ["Howard Kim"]},
+            {name: "아무것도 안하고 2년이 지났어", producer: ["Howard Kim"]},
+            {name: "건강하게", producer: ["Howard Kim"]},
+        ]
+    },
+    {
         name: "twenty plus",
         engName: "twenty plus",
         artist: "MST",
         date: "2023.12.12",
         type: "정규앨범 1집",
-        cover: "MST",
-        mm: "FluorMeme",
+        cover: "Billy Boi",
+        mix: "Howard Kim",
+        master: "Howard Kim",
         songs: [
             {name: "폐달을 밟아", producer: ["Pink is Cold"]},
             {name: "스물의 끝", producer: ["우야"], feature: ["이모린"]},
@@ -42,10 +64,11 @@ const ALBUMS = [
         name: "쓰레기매립장",
         engName: "Trash MaRipG",
         artist: "Billy Boi & Don back",
-        date: "2023.11.01-2023.12.01",
+        date: "2023.12.01",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Juts5Bell",
+        mix: "Juts5Bell",
+        master: "Juts5Bell",
         songs: [
             {name: "기분더러운날", feature: ["Hareubang"], producer: ["FluorMeme"]},
             {name: "Fuckallnighterup", producer: ["FluorMeme"]},
@@ -66,7 +89,8 @@ const ALBUMS = [
         date: "2023.10.01",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin",
+        mix: "Juts5Bell, Shay Jin",
+        master: "Juts5Bell, Shay Jin",
         songs: [
             {name: "#정원식2", producer: ["Shay Jin"]},
             {name: "JaenaN", producer: ["Shay Jin"], feature: ["Shay Jin"]},
@@ -82,13 +106,14 @@ const ALBUMS = [
         artist: "MST",
         date: "2023.08.14",
         type: "Mixtape",
-        cover: "KE$h B",
-        mm: "Shay Jin",
+        cover: "KESH B",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             {name: "시발자동차 2", producer: ["Shay Jin"], feature: ["Nike Sangwoo"]},
             {name: "나르샤", producer: ["Shay Jin"]},
             {name: "몽환의 숲", producer: ["Shay Jin"]},
-            {name: "M&M Freestyle", producer: ["Shay Jin"], feature: ["Billy Boi"]}
+            {name: "M&M Freestyle", producer: ["Shay Jin"], feature: ["sagikun", "Billy Boi"]}
         ]
     },
     {
@@ -97,8 +122,9 @@ const ALBUMS = [
         artist: "sagikun",
         date: "2023.04.30",
         type: "Mixtape",
-        cover: "KE$h B",
-        mm: "Shay Jin",
+        cover: "KESH B",
+        mix: "sagikun, Shay Jin",
+        master: "sagikun, Shay Jin",
         songs: [
             {name: "intro", producer: ["Shay Jin"]},
             {name: "sagi", producer: ["sagikun"]},
@@ -118,7 +144,8 @@ const ALBUMS = [
         date: "2023.02.17",
         type: "싱글",
         cover: "MST",
-        mm: "FluorMeme",
+        mix: "Howard Kim",
+        master: "Howard Kim",
         songs: [
             {
                 name: "내일이면돼",
@@ -133,14 +160,15 @@ const ALBUMS = [
         date: "2023.02.08",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin",
+        mix: "Shay Jin, Juts5Bell",
+        master: "Shay Jin",
         songs: [
             { name: "딸기 (Intro)", producer: ["Juts5Bell"] },
             { name: "Trap!", producer: ["Shay Jin"], feature: ["Big anDre's Bo$$"] },
             { name: "BGHFFF Danger!", producer: ["Shay Jin"] },
             { name: "금오헬창", producer: ["Shay Jin"]},
-            { name: "Hook Tuck!", producer: ["Shay Jin"], feature: ["신선우"] },
-            { name: "Money Dance!", producer: ["Shay Jin"], feature: ["KE$h B"] },
+            { name: "Hook Tuck!", producer: ["Shay Jin"], feature: ["gibongi"] },
+            { name: "Money Dance!", producer: ["Shay Jin"], feature: ["KESH B"] },
             { name: "도건인생백도", producer: ["Shay Jin"], feature: ["MST", "sagikun"] },
             { name: "A Long Sale", producer: ["Shay Jin"], feature: ["이예슬", "Mogi"] }
         ]
@@ -152,7 +180,8 @@ const ALBUMS = [
         date: "2023.02.02",
         type: "싱글",
         cover: "Billy Boi",
-        mm: "Juts5Bell",
+        mix: "Juts5Bell",
+        master: "Juts5Bell",
         songs: [
             {
                 name: "08Basick Remix Remix",
@@ -167,7 +196,8 @@ const ALBUMS = [
         date: "2022.04.08",
         type: "싱글",
         cover: "MST",
-        mm: "FluorMeme",
+        mix: "Howard Kim",
+        master: "Howard Kim",
         songs: [
             {
                 name: "Cresent",
@@ -181,8 +211,9 @@ const ALBUMS = [
         artist: "MST",
         date: "2022.03.31",
         type: "싱글",
-        cover: "FluorMeme",
-        mm: "FluorMeme",
+        cover: "MST",
+        mix: "Howard Kim",
+        master: "Howard Kim",
         songs: [
             {
                 name: "어쩔티비",
@@ -196,8 +227,9 @@ const ALBUMS = [
         artist: "MST",
         date: "2022.01.28",
         type: "싱글",
-        cover: "FluorMeme",
-        mm: "FluorMeme",
+        cover: "MST",
+        mix: "Howard Kim",
+        master: "Howard Kim",
         songs: [
             {
                 name: "LaTale",
@@ -212,10 +244,11 @@ const ALBUMS = [
         date: "2021.08.16",
         type: "Mixtape",
         cover: "Shay Jin",
-        mm: "Shay Jin",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             { name: "Bustdown!", producer: ["Shay Jin"] },
-            { name: "Gibunjo Silver Wind", producer: ["Shay Jin"], feature: ["Dok3"] },
+            { name: "Gibunjo Silver Wind", producer: ["Shay Jin"], feature: ["이조은"] },
             { name: "두진서 Freestyle", producer: ["Shay Jin"] },
             { name: "ruf", producer: ["Shay Jin"], feature: ["UnteIl"] },
             { name: "노인공격", producer: ["Shay Jin"], feature: ["Big anDre's Bo$$", "shinji", "Davy Jones"] },
@@ -231,7 +264,8 @@ const ALBUMS = [
         date: "2021.07.30",
         type: "Mixtape",
         cover: "Shay Jin",
-        mm: "Shay Jin",
+        mix: "Shay Jin, sagikun",
+        master: "Shay Jin, sagikun",
         songs: [
             { name: "No Cap", producer: ["sagikun"], feature: ["이수민"]},
             { name: "Don't Cross the Line", producer: ["sagikun"], feature: ["BJH Brother"] },
@@ -252,7 +286,8 @@ const ALBUMS = [
         date: "2021.02.26",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             { name: "Intro", producer: ["Shay Jin"], feature: ["SCJ Boi"] },
             { name: "100원 자르는 사나이", producer: ["Shay Jin"], feature: ["MST"] },
@@ -260,14 +295,14 @@ const ALBUMS = [
             { name: "Lim Jaesick, the Truck Racer", producer: ["Shay Jin"] },
             { name: "Lee Yeseul, the Happy Church Minister Clone", producer: ["Shay Jin"], feature: ["UnteIl", "Big anDre's Bo$$"] },
             { name: "모기에게... (Skit)", producer: ["Shay Jin"], feature: ["sagikun"] },
-            { name: "기본기 Ruler G", producer: ["Shay Jin"], feature: ["sagikun"] },
-            { name: "이원문 시발새끼", producer: ["Shay Jin"], feature: ["BIG Naugty", "Profe Morri$"] },
+            { name: "Gi Bongi Ruler G", producer: ["Shay Jin"], feature: ["sagikun"] },
+            { name: "Lee Wonmoon, the Sibal Saekki", producer: ["Shay Jin"], feature: ["BIG Naugty", "Profe Morri$"] },
             { name: "대가대 셀카 1위", producer: ["Shay Jin"], feature: ["Mogi", "Fi$h"] },
             { name: "벙어리 새기", producer: ["Shay Jin"], feature: ["Mogi"] },
-            { name: "Unknown E.R. Gamer", producer: ["Shay Jin"], feature: ["shinji", "Fi$h"] },
-            { name: "김재환 타법 (Skit)", producer: ["Shay Jin"] },
+            { name: "Choo Hyukjoon, the Unknown E.R. Gamer", producer: ["Shay Jin"], feature: ["shinji", "Fi$h"] },
+            { name: "Kim Jaehwan Method (Skit)", producer: ["Shay Jin"] },
             { name: "BGH Father Remix", producer: ["Shay Jin"], feature: ["Fi$h", "MST", "Lil Arj", "sagikun"] },
-            { name: "Outro", producer: ["FluorMeme"] }
+            { name: "Outro", producer: ["Howard Kim"] }
         ]
     },
     {
@@ -277,7 +312,8 @@ const ALBUMS = [
         date: "2020.06.17",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             { name: "SAVE", producer: ["Shay Jin"] },
             { name: "우상의우상의", producer: ["Shay Jin"] },
@@ -296,11 +332,12 @@ const ALBUMS = [
         date: "2020.05.06",
         type: "Mixtape",
         cover: "Billy Boi",
-        mm: "Shay Jin",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             { name: "디디오엔지", producer: ["Shay Jin"] },
             { name: "BGH Father", producer: ["Shay Jin"], feature: ["Fi$h"] },
-            { name: "Sip", producer: ["FluorMeme"], feature: ["Big anDre's Bo$$"] },
+            { name: "Sip", producer: ["Howard Kim"], feature: ["Big anDre's Bo$$"] },
             { name: "20.5학번 Freestyle", producer: ["Shay Jin"] },
             { name: "rod", producer: ["Shay Jin"], feature: ["Mogi"] },
             { name: "돼지흥분제", producer: ["Shay Jin"] },
@@ -315,6 +352,8 @@ const ALBUMS = [
         type: "Mixtape",
         cover: "Billy Boi",
         mm: "Shay Jin",
+        mix: "Shay Jin",
+        master: "Shay Jin",
         songs: [
             { name: "Abyss", producer: ["Shay Jin"], feature: ["Profe Morris", "Fi$h"] },
             { name: "Gonggomoon", producer: ["Shay Jin"], feature: ["shinji"] },

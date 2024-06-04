@@ -39,19 +39,22 @@ export const Artists = () => {
             </li> 
         );
     }
+
+    /*
+                    <h3 className='ercfTitle'>ERCF 주니어스</h3>
+                <ul className="artistUl">
+                    {li2}
+                </ul>
+                */
     
     return (
         <>
             <NavBar />
             <div className="body">
-            <h3 className='ercfTitle'>ERCF</h3>
                 <ul className="artistUl">
                     {li}
                 </ul>
-                <h3 className='ercfTitle'>ERCF 주니어스</h3>
-                <ul className="artistUl">
-                    {li2}
-                </ul>
+
             </div>
         </>
 

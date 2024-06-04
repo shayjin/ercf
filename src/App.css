@@ -1,18 +1,57 @@
 .main-pic {
-  width: 1000px; 
+  width: 800px; 
   height: auto;
   display: block; 
   margin-left: auto;
   margin-right: auto;
-  margin-top:10px;
+  margin-top: 10px;
+  filter: invert(1);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .main-pic {
     width:100vw;
     height: auto;
   }
 
+  .body2 {
+    width: 90vw !important;
+  }
+
+}
+
+body {
+  background-color: rgb(28,28,30);
+  color: #fff;
+  font-weight: 200 !important;
+}
+
+
+
+.body2 {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body2 p {
+  text-align: left;
+  color: 	#eeeeee;
+  margin-bottom: 40px;
+}
+
+.body2 h3{
+  text-align: left;
+
+}
+
+.body2 ul {
+  margin-left: 0px;
+
+}
+
+p {
+  color: white;
 }
 
 .main-logo {
@@ -76,7 +115,7 @@ p, h3{
 
 button {
   border: none;
-  background-color:white;
+  background-color: 	#1e1e1e;
 }
 
 
@@ -150,7 +189,7 @@ button {
 }
 
 table td, table, th, tr {
-  border: 1px solid black;
+  border: 1px solid rgb(94, 93, 93);
 }
 
 td {
@@ -158,10 +197,15 @@ td {
   padding-right: 10px;
 }
 
+p {
+  font-weight: 150;
+}
+
+
 table {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 18px;
   width: 800px;
   margin-bottom: 30px;
 }
@@ -183,11 +227,11 @@ table {
 
 a {
   text-decoration: none;
-  color: rgb(34, 88, 205);
+  color: #0070f3;
 }
 
 .album p {
-  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 #navbarNav {
@@ -297,5 +341,5 @@ a {
 .ercfTitle {
   text-align: center;
   margin-top: 0px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }

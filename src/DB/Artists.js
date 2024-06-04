@@ -1,26 +1,26 @@
 const ARTISTS = [
     {
         name: "Shay Jin",
-        music: ["BILLY JIN", "Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
-        since: "2013.10.05",
+        music: ["BILLY JIN", "쓰레기매립장", "Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM", "GANG", "JUCK"],
+        since: "2019.05.01",
         position: "래퍼, 프로듀서"
     },
     {
         name: "Billy Boi",
         music: ["BILLY JIN", "쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
-        since: "2013.10.16",
+        since: "2019.05.01",
         position: "래퍼, 디자이너"
     },
     {
         name: "sagikun",
         music: ["Billy Boi State University", "M&M", "Mogi Killer", "진동", "sagikun", "진서", "KIK", "POM"],
-        since: "2014.01.19",
+        since: "2019.05.01",
         position: "스키터"
     },
     {
         name: "Mogi",
         music: ["BILLY JIN", "Mogi Killer", "진동", "KIK", "POM", "GANG"],
-        since: "2014.02.07",
+        since: "2019.05.01",
         position: "래퍼"
     },
     {
@@ -36,6 +36,30 @@ const ARTISTS = [
         position: "래퍼"
     },
     {
+        name: "BIG Naugty",
+        music: ["Mogi Killer", "sagikun", "KIK", "POM"],
+        since: "2022.07.01",
+        position: "스키터"
+    },
+    {
+        name: "Juts5Bell",
+        music: ["BILLY JIN", "Billy Boi State University", "진동"],
+        since: "2023.01.26",
+        position: "프로듀서, 오디오 엔지니어"
+    },
+    {
+        name: "unujangay",
+        music: ["BILLY JIN", "Mogi Killer", "08Basick Remix Remix"],
+        since: "2023.02.02",
+        position: "래퍼"
+    },
+    {
+        name: "KESH B",
+        music: ["M&M", "Mogi Killer", "진동"],
+        since: "2023.04.11",
+        position: "디자이너"
+    },
+    {
         name: "김진성",
         music: ["BILLY JIN", "진서"],
         since: "2023.04.19",
@@ -43,10 +67,10 @@ const ARTISTS = [
     },
     {
         name: "gibongi",
-        music: ["진동"],
+        music: ["기본기 mixtape 0", "진동"],
         since: "2023.11.06",
         position: "래퍼"
-    }
+    },
 ];
 
 export default ARTISTS;

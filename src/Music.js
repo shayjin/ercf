@@ -19,7 +19,7 @@ export const Music = () => {
                 <Link className="viewProj" to={`/ERCF/Album/${album.engName.replaceAll(" ", "_")}`}>
                     <button id="myBtn">
                         <img src={album.picture}/> 
-                        <b><p>{album.name}</p></b>
+                        <p>{album.name}</p>
                         <p>{album.artist}</p>
                         <p>{album.date} 발매</p>
                     </button> 

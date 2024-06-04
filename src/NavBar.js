@@ -12,16 +12,13 @@ export const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li class="nav-item active">
-              <Link class="nav-link" to="/ERCF/About">About</Link>
+              <Link class="nav-link" to="/ERCF/">Home</Link>
             </li>
             <li class="nav-item active">
               <Link class="nav-link" to="/ERCF/Artists">Artists</Link>
             </li>
             <li class="nav-item active">
               <Link class="nav-link" to="/ERCF/Music">Music</Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/ERCF/Contact">Contact</Link>
             </li>
           </ul>
         </div>
