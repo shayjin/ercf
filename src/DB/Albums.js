@@ -1,5 +1,21 @@
 const ALBUMS = [
     {
+        name: "Run Out Of Time",
+        engName: "Run Out Of Time",
+        artist: "Billy Boi",
+        date: "2024.12.31",
+        type: "싱글",
+        cover: "Billy Boi",
+        mix: "Juts5Bell",
+        master: "Juts5Bell",
+        songs: [
+            {
+                name: "Run Out Of Time",
+                producer: ["Juts5Bell"]
+            }
+        ]
+    },
+    {
         name: "BILLY JIN",
         engName: "BILLY JIN",
         artist: "Shay Jin & Billy Boi",

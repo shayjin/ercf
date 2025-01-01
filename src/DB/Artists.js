@@ -7,7 +7,7 @@ const ARTISTS = [
     },
     {
         name: "Billy Boi",
-        music: ["BILLY JIN", "쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
+        music: ["Run Out Of Time", "BILLY JIN", "쓰레기매립장", "Billy Boi State University", "M&M", "진동", "08Basick Remix Remix", "진서", "KIK", "POM", "GANG", "JUCK"],
         since: "2019.05.01",
         position: "래퍼, 디자이너"
     },
@@ -43,7 +43,7 @@ const ARTISTS = [
     },
     {
         name: "Juts5Bell",
-        music: ["BILLY JIN", "Billy Boi State University", "진동"],
+        music: ["Run Out Of Time", "BILLY JIN", "Billy Boi State University", "진동"],
         since: "2023.01.26",
         position: "프로듀서, 오디오 엔지니어"
     },
